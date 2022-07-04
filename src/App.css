@@ -1,38 +1,182 @@
-.App {
-  text-align: center;
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  background-repeat: repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* cards */
+
+.card-footer {
+  background: transparent;
+  border-top: 0px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+    bottom: 3rem;
+    z-index: 10;
   }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+    height: 40rem;
+    max-width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+ 
+  
+  .welcome-carousel-image1{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+    background-image:url('./components/images/carousel1.jpg');
+  }
+
+  .welcome-carousel-image2{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+    background-image:url('./components/images/carousel2.jpg');
+
+  }
+
+  .welcome-carousel-image3{
+    box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
+    background-image:url('./components/images/carousel3.jpg');
+  }
+
+  /* Shopping cart offcanvas */
+.shopping-cart-offcanvas {
+  width: 500px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+/* Jumbotron */
+
+.jumbotron-cheese-cakes {
+  background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
+}
+
+.jumbotron-all-pies {
+  background: url('./components/images/products/about-dolphin-small.jpg') no-repeat fixed;
+}
+
+.jumbotron-fruit-pies {
+  background: url('./components/images/products/services-openwater.jpg') no-repeat fixed;
+}
+
+.jumbotron-seasonal-pies {
+  background: url('./components/images/products/about-dolphin-small.jpg') no-repeat fixed;
+}
+
+.jumbotron-other {
+  background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
+}
+
+.jumbotron-detail-open-water {
+  background: url('./components/images/products/openwater.jpg') no-repeat fixed;
+}
+
+.jumbotron-detail-adv-open-water {
+  background: url('./components/images/products/padi-shop.jpg') no-repeat fixed;
+}
+
+.jumbotron-detail-rescue {
+  background: url('./components/images/openwater-background.jpg') no-repeat fixed;
+}
+
+.jumbotron-detail-allcourses {
+  background: url('./components/images/openwater-background.jpg') no-repeat fixed;
+}
+
+
+
+.jumbotron {
+  box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0.1);
+  height: 40vh;
+  background-size: cover;
+}
+
+
+
+
+
+/*FOOTER */
+
+.main-footer {
+  margin-bottom: -100px;
+}
+
+
+.page-footer a {
+  background: #0c62d3;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 12px;
+  padding: 0 0 4px;
+  
+}
+footer a:hover { text-decoration: underline; }
+
+
+.page-footer {
+  background: #0c62d3;
+  color: #fff;
+  text-align:left;
+  margin-bottom: -100px;
+  }
+
+.footer-copyright{
+    padding-bottom: 1000px;
+  }
+
+
+  .links-footer-col1 {
+    float: left;
+    width: 25%;
+    background: #0c62d3;
+    color: #fff;
+    }
+
+
+
+
+.social {
+  background: #0c62d3;
+  text-indent: 20px;
+  padding: 2px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.social ul li { display: inline-block; 
+  
+}
+.social ul li a {
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-size: 23px 23px;
+    background-position: center;
+
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.twitter { background-image: url('./components/images/twitter.svg'); }
+.facebook { background-image: url('./components/images/facebook.svg'); }
+.instagram { background-image: url('./components/images/instagram.svg'); }
+.pinterest { background-image: url('./components/images/pinterest.svg'); }
+
+
+
+.copyright {
+float: left;
+text-align: center;
+width: 100%;
+height: 50px;
+padding-top: 100px;
+background: #043b83;
+color: white;
 }
+
+
