@@ -49,25 +49,25 @@ function AllCourses() {
                                     </a>
 
                                     <ul className="dropdown-menu active" aria-labelledby="nav-dropdown">
-                                        <li><a className="dropdown-item active" href="/OpenWater">Open Water</a></li>
+                                        <li><a className="dropdown-item" href="/OpenWater">Open Water</a></li>
                                         <li><a className="dropdown-item" href="/AdvOpenWater">Advanced Open Water</a></li>
-                                        <li><a className="dropdown-item" href="/">Rescue Diving</a></li>
+                                        <li><a className="dropdown-item" href="/Rescue">Rescue Diving</a></li>
                                         <li>
                                             <hr className="dropdown-divider" />
                                         </li>
-                                        <li><a className="dropdown-item" href="/">All Dive Courses</a></li>
+                                        <li><a className="dropdown-item active" href="/AllCourses">All Dive Courses</a></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="order.html">Dive Shop</a>
+                                    <a className="nav-link" href="/">Dive Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="piesubscription.html">
+                                    <a className="nav-link " href="/">
                                         Celtic subscription
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="contact.html">Contact</a>
+                                    <a className="nav-link" href="/">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -104,7 +104,7 @@ function AllCourses() {
                                                     <p className="card-text">$200.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="/" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -116,7 +116,7 @@ function AllCourses() {
                                                     <p className="card-text">$150.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -128,7 +128,7 @@ function AllCourses() {
                                                     <p className="card-text">$80.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -140,7 +140,7 @@ function AllCourses() {
                                                     <p className="card-text">$250.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/OpenWater" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -167,7 +167,7 @@ function AllCourses() {
                                                     <p className="card-text">$300.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AdvOpenWater" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -179,7 +179,7 @@ function AllCourses() {
                                                     <p className="card-text">$300.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/Rescue" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -207,7 +207,7 @@ function AllCourses() {
                                                     <p className="card-text">$150.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -219,7 +219,7 @@ function AllCourses() {
                                                     <p className="card-text">$200.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -231,7 +231,7 @@ function AllCourses() {
                                                     <p className="card-text">$50.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -243,7 +243,7 @@ function AllCourses() {
                                                     <p className="card-text">$250.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/OpenWater" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -255,7 +255,7 @@ function AllCourses() {
                                                     <p className="card-text">$350.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AdvOpenWater" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -268,7 +268,7 @@ function AllCourses() {
                                                     <p className="card-text">$350.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/Rescue" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -282,7 +282,7 @@ function AllCourses() {
                                                     <p className="card-text">$350.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -295,7 +295,7 @@ function AllCourses() {
                                                     <p className="card-text">$350.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>
@@ -308,7 +308,7 @@ function AllCourses() {
                                                     <p className="card-text">$350.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a href="applepie.html" className="btn btn-primary">View details</a>
+                                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                                 </div>
                                             </div>
                                         </div>

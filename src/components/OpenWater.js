@@ -47,19 +47,19 @@ function OpenWater() {
                                         <li>
                                             <hr className="dropdown-divider" />
                                         </li>
-                                        <li><a className="dropdown-item" href="/">All Dive Courses</a></li>
+                                        <li><a className="dropdown-item" href="/AllCourses">All Dive Courses</a></li>
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="order.html">Dive Shop</a>
+                                    <a className="nav-link" href="/">Dive Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="piesubscription.html">
+                                    <a className="nav-link " href="/">
                                         Celtic subscription
                                     </a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="contact.html">Contact</a>
+                                    <a className="nav-link" href="/">Contact</a>
                                 </li>
                             </ul>
                         </div>
