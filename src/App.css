@@ -54,6 +54,7 @@ body {
 
 /* Jumbotron */
 
+/*
 .jumbotron-cheese-cakes {
   background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
 }
@@ -69,6 +70,7 @@ body {
 .jumbotron-seasonal-pies {
   background: url('./components/images/products/about-dolphin-small.jpg') no-repeat fixed;
 }
+*/
 
 .jumbotron-other {
   background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
@@ -162,12 +164,13 @@ footer a:hover { text-decoration: underline; }
     
 }
 
+/*
 .twitter { background-image: url('./components/images/twitter.svg'); }
 .facebook { background-image: url('./components/images/facebook.svg'); }
 .instagram { background-image: url('./components/images/instagram.svg'); }
 .pinterest { background-image: url('./components/images/pinterest.svg'); }
 
-
+*/
 
 .copyright {
 float: left;
