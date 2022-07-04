@@ -164,7 +164,7 @@ function AdvOpenWater() {
 
             </main>
 
-            <footer class="main-footer text-white text-center text-lg-start bg-primary">
+            <footer className="main-footer text-white text-center text-lg-start bg-primary">
 
                 <div className="container p-4">
 
@@ -181,10 +181,10 @@ function AdvOpenWater() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
                             </div>
 
 

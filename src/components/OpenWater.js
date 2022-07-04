@@ -43,7 +43,7 @@ function OpenWater() {
                                     <ul className="dropdown-menu active" aria-labelledby="nav-dropdown">
                                         <li><a className="dropdown-item active" href="/OpenWater">Open Water</a></li>
                                         <li><a className="dropdown-item" href="/AdvOpenWater">Advanced Open Water</a></li>
-                                        <li><a className="dropdown-item" href="/">Rescue Diving</a></li>
+                                        <li><a className="dropdown-item" href="/Rescue">Rescue Diving</a></li>
                                         <li>
                                             <hr className="dropdown-divider" />
                                         </li>
@@ -179,10 +179,10 @@ function OpenWater() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
                             </div>
 
 

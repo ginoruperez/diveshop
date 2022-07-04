@@ -98,7 +98,7 @@ function AllCourses() {
                                     <div className="row">
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={discoverscuba} />
+                                                <img className="card-img-top" alt="discover scuba" src={discoverscuba} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Discover Scuba</h5>
                                                     <p className="card-text">$200.00</p>
@@ -110,7 +110,7 @@ function AllCourses() {
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={mermaid} />
+                                                <img className="card-img-top" alt="mermaid" src={mermaid} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Discover Mermaid</h5>
                                                     <p className="card-text">$150.00</p>
@@ -122,7 +122,7 @@ function AllCourses() {
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={snorkel} />
+                                                <img className="card-img-top" alt="snorkel" src={snorkel} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Fun Dive for Kids and Adult</h5>
                                                     <p className="card-text">$80.00</p>
@@ -134,7 +134,7 @@ function AllCourses() {
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={openwater} />
+                                                <img className="card-img-top" alt="open water" src={openwater} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Open Water Dive</h5>
                                                     <p className="card-text">$250.00</p>
@@ -161,7 +161,7 @@ function AllCourses() {
                                     <div className="row">
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={advopenwater} />
+                                                <img className="card-img-top" alt="advanced open water" src={advopenwater} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Advanced Open Water</h5>
                                                     <p className="card-text">$300.00</p>
@@ -173,7 +173,7 @@ function AllCourses() {
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={rescue} />
+                                                <img className="card-img-top" alt="resuce" src={rescue} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Rescue Dive Course</h5>
                                                     <p className="card-text">$300.00</p>
@@ -188,21 +188,6 @@ function AllCourses() {
                             </div>
                         </div>
 
-{/*}
-
-                        import discoverscuba from './images/products/services-discoverscuba.jpg';
-import mermaid from './images/products/mermaid-small.jpg';
-import snorkel from './images/products/services-snorkeling.jpg';
-import openwater from './images/products/services-openwater.jpg';
-
-import advopenwater from './images/products/services-advancedopen.jpg';
-import rescue from './images/products/services-rescue.jpg';
-
-import dolphin from './images/products/home-dolphin-small.jpg';
-import photography from './images/products/dive-photography.jpg';
-import boatdiver from './images/products/boatdiver.jpg';
-    */}
-
                         <div className="accordion-item">
                             <h2 className="accordion-header" id="headingThree">
                                 <button className="accordion-button collapsed" type="button" data-bs-toggle="collapse"
@@ -216,7 +201,7 @@ import boatdiver from './images/products/boatdiver.jpg';
                                     <div className="row">
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={discoverscuba} />
+                                                <img className="card-img-top" alt="discover scuba" src={discoverscuba} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Discover Scuba</h5>
                                                     <p className="card-text">$150.00</p>
@@ -228,7 +213,7 @@ import boatdiver from './images/products/boatdiver.jpg';
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={mermaid} />
+                                                <img className="card-img-top" alt="mermaid" src={mermaid} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Discover Mermaid</h5>
                                                     <p className="card-text">$200.00</p>
@@ -240,7 +225,7 @@ import boatdiver from './images/products/boatdiver.jpg';
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={snorkel} />
+                                                <img className="card-img-top" alt = "snorkeling" src={snorkel} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Snorkelling</h5>
                                                     <p className="card-text">$50.00</p>
@@ -252,7 +237,7 @@ import boatdiver from './images/products/boatdiver.jpg';
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={openwater} />
+                                                <img className="card-img-top" alt="open water" src={openwater} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Open Water Dive</h5>
                                                     <p className="card-text">$250.00</p>
@@ -264,7 +249,7 @@ import boatdiver from './images/products/boatdiver.jpg';
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={advopenwater} />
+                                                <img className="card-img-top" alt="advanced open water" src={advopenwater} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Advanced Open Water</h5>
                                                     <p className="card-text">$350.00</p>
@@ -277,7 +262,7 @@ import boatdiver from './images/products/boatdiver.jpg';
 
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={rescue} />
+                                                <img className="card-img-top" alt="rescue dive" src={rescue} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Rescue Dive</h5>
                                                     <p className="card-text">$350.00</p>
@@ -291,7 +276,7 @@ import boatdiver from './images/products/boatdiver.jpg';
 
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={dolphin} />
+                                                <img className="card-img-top" alt="dolphin" src={dolphin} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Diving with Dolphin</h5>
                                                     <p className="card-text">$350.00</p>
@@ -304,7 +289,7 @@ import boatdiver from './images/products/boatdiver.jpg';
 
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={photography} />
+                                                <img className="card-img-top" alt="underwater photography" src={photography} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Underwater Photography</h5>
                                                     <p className="card-text">$350.00</p>
@@ -317,7 +302,7 @@ import boatdiver from './images/products/boatdiver.jpg';
 
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" src={boatdiver} />
+                                                <img className="card-img-top" alt="boat diver" src={boatdiver} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Boat Diving</h5>
                                                     <p className="card-text">$350.00</p>
@@ -357,10 +342,10 @@ import boatdiver from './images/products/boatdiver.jpg';
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
                             </div>
 
 

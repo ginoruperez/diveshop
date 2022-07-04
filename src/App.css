@@ -54,28 +54,6 @@ body {
 
 /* Jumbotron */
 
-/*
-.jumbotron-cheese-cakes {
-  background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
-}
-
-.jumbotron-all-pies {
-  background: url('./components/images/products/about-dolphin-small.jpg') no-repeat fixed;
-}
-
-.jumbotron-fruit-pies {
-  background: url('./components/images/products/services-openwater.jpg') no-repeat fixed;
-}
-
-.jumbotron-seasonal-pies {
-  background: url('./components/images/products/about-dolphin-small.jpg') no-repeat fixed;
-}
-*/
-
-.jumbotron-other {
-  background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
-}
-
 .jumbotron-detail-open-water {
   background: url('./components/images/products/openwater.jpg') no-repeat fixed;
 }
@@ -89,8 +67,13 @@ body {
 }
 
 .jumbotron-detail-allcourses {
-  background: url('./components/images/openwater-background.jpg') no-repeat fixed;
+  background: url('./components/images/openwater-background.jpg') no-repeat fixed;  
 }
+
+.jumbotron-other {
+  background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
+}
+
 
 
 
@@ -164,13 +147,6 @@ footer a:hover { text-decoration: underline; }
     
 }
 
-/*
-.twitter { background-image: url('./components/images/twitter.svg'); }
-.facebook { background-image: url('./components/images/facebook.svg'); }
-.instagram { background-image: url('./components/images/instagram.svg'); }
-.pinterest { background-image: url('./components/images/pinterest.svg'); }
-
-*/
 
 .copyright {
 float: left;
