@@ -66,12 +66,13 @@ body {
   background: url('./components/images/openwater-background.jpg') no-repeat fixed;
 }
 
+
 .jumbotron-detail-allcourses {
   background: url('./components/images/openwater-background.jpg') no-repeat fixed;  
 }
 
-.jumbotron-other {
-  background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
+.jumbotron-team {
+  background: url('./components/images/openwater-background.jpg') no-repeat fixed;
 }
 
 
@@ -159,3 +160,28 @@ color: white;
 }
 
 
+
+iframe.services-open-water {
+	width: 850px;
+	height: 500px;
+
+}
+
+.container-openwater {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 56.25% 16:9 Aspect Ratio */
+  
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}

@@ -13,6 +13,7 @@ import { Routes, Route } from 'react-router-dom'
 import Rescue from './components/Rescue';
 import AllCourses from './components/AllCourses';
 import Products from './components/Products';
+import AboutUs from './components/AboutUs';
 
 
 
@@ -28,6 +29,7 @@ root.render(
       <Route path="Rescue" element={<Rescue />} />
       <Route path="AllCourses" element={<AllCourses />} />
       <Route path="Products" element={<Products />} />
+      <Route path="AboutUs" element={<AboutUs />} />
 
 
     </Routes>

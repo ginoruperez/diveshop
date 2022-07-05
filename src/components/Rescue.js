@@ -51,12 +51,10 @@ function Rescue() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Dive Shop</a>
+                                    <a className="nav-link" href="/Products">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="/">
-                                        Celtic subscription
-                                    </a>
+                                    <a className="nav-link " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/">Contact</a>
@@ -82,7 +80,14 @@ function Rescue() {
 
                     <div className="row ">
                         <div className="col-6 col-lg-8">
-                            <img src={rescue} className="img-fluid rounded-1" alt="test" />
+                            {/* <img src={rescue} className="img-fluid rounded-1" alt="test" /> */}
+                            
+                            <div className="container-openwater">
+                                <iframe className="responsive-iframe" src="https://www.youtube.com/embed/YNdo9tcgzpM?autoplay=1&mute=1"
+                                    title="YouTube video player"></iframe>
+                            </div>
+
+
                         </div>
 
                         <div className="col-6 col-lg-4">
@@ -119,8 +124,8 @@ function Rescue() {
                         </div>
                     </div>
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                        <h4>A quote from Celtic Diving Team</h4>
-                        <p className="mb-0 fst-italic"> We dive not to escape life, but for life not to escape us.
+                        <h4>A quote from Uknown...</h4>
+                        <p className="mb-0 fst-italic">Be nice to divers. We know places where nobody will find you.
                         </p>
                     </div>
 

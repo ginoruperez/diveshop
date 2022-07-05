@@ -50,12 +50,10 @@ function Main() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/Products">Dive Shop</a>
+                                    <a className="nav-link" href="/Products">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="/">
-                                        Celtic subscription
-                                    </a>
+                                    <a className="nav-link " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/">Contact</a>
@@ -123,28 +121,25 @@ function Main() {
                                 Our Company
                             </h2>
                             <section>
-                                Gino Ruperez is the owner of Celtic Sea Dive Shop located in Kinsale, Southwest coast of Ireland
-                                near Celtic Sea. It has been in operation since 2015 in Ireland. The idea of forming a Dive Shop
-                                is one of dreams by owner who has greatly influenced and inspired by his spectacular experiences
-                                in doing underwater activities by his PADI professional diving instructors and diving friends
-                                who work from Jeddah Saudi Arabia as an expat for several years. Diving in the Red Sea is a fun
-                                filled recreational activities that helps them to alleviate the boredom and loneliness of being
-                                thousands of miles away from their family.
+                                Our Dive Shop is located in Kilmessan Village Co. Meath. We stock a wide range of Scubapro, 
+                                Mares, Apeks and Aqualung dive equipment.  
+                                
+                                For convenience customers may also order from our on line shop.
+
+                                We are PADI accredited servicing and our test centre is also located within our shop
+
+                                With exclusive deals in Malta and Gozo and other fantastic dive locations around Ireland, 
+                                we guarantee you the best diving all around.  
+                                
+                                With over 10 years of experience, we guarantee the highest standards of quality in 
+                                terms of teaching, safety, and services.
+
+                                All our equipment is renewed every 2 years, to guarantee your comfort and safety. 
+                                So start your PADI Adventure with us today, get diving and change your life. 
+                                Our team is here to assist you to step by step.
                             </section>
                             <br />
 
-                            <section>
-                                The owner got an interest in pursuing a goal of learning to dive in an open water of Red Sea in
-                                the south of Jeddah while he was working in Saudi as an expat. Fortunately, he met his
-                                professional PADI Irish instructor David John Walker and few diving buddies.
-                            </section>
-                            <br />
-                            <section>
-                                After immigrating to Ireland in 2015 and settled in Kinsale, he started to form a team of
-                                professional divers along with David John Walker as the lead instructor. Kinsale has some
-                                amazing dive locations and is the perfect place to learn to dive.
-                            </section>
-                            <br />
                             <section>
                                 The Celtic Sea Dive shop aims to provide training and education in a fun-filled safe environment
                                 to people from all walks of life.

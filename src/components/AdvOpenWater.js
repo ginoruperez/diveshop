@@ -50,12 +50,10 @@ function AdvOpenWater() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Dive Shop</a>
+                                    <a className="nav-link" href="/Products">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="/">
-                                        Celtic subscription
-                                    </a>
+                                    <a className="nav-link " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/">Contact</a>
@@ -81,7 +79,12 @@ function AdvOpenWater() {
 
                     <div className="row ">
                         <div className="col-6 col-lg-8">
-                            <img src={advancedopen} className="img-fluid rounded-1" alt="advanced open water" />
+                            {/* <img src={advancedopen} className="img-fluid rounded-1" alt="advanced open water" /> */}
+
+                            <div className="container-openwater">
+                                <iframe className="responsive-iframe" src="https://www.youtube.com/embed/tWPGi52nkHg?autoplay=1&mute=1"
+                                    title="YouTube video player"></iframe>
+                            </div>
                         </div>
 
                         <div className="col-6 col-lg-4">
@@ -122,8 +125,9 @@ function AdvOpenWater() {
                         </div>
                     </div>
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                        <h4>A quote from Celtic Diving Team</h4>
-                        <p className="mb-0 fst-italic"> We dive not to escape life, but for life not to escape us.
+                        <h4>Quote from Edmund Hillary...</h4>
+                        <p className="mb-0 fst-italic"> It’s not the depths we conquer, but ourselves.
+
                         </p>
                     </div>
 

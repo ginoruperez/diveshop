@@ -1,14 +1,20 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-import discoverscuba from './images/products/services-discoverscuba.jpg';
-import mermaid from './images/products/mermaid-small.jpg';
-import homedolphin from './images/products/home-dolphin-small.jpg';
-import photography from './images/products/dive-photography.jpg';
-import boatdiver from './images/products/boatdiver.jpg';
 import dolphin3 from './images/dolphin3.png';
+import aboutdiveteam from './images/products/about-diveteam.jpg';
 
 
-function OpenWater() {
+import dolphinsmall from './images/products/dolphin-small.jpg';
+import servicesadvancedopen from './images/products/services-advancedopen-small.jpg';
+import servicesopensmall from './images/products/services-discoverscuba.jpg';
+
+import divergino from './images/diver-gino1.jpg';
+import diverjohn from './images/diver-john.jpg';
+import diverfiona from './images/diver-fiona.jpg';
+
+
+
+function AboutUs() {
 
     return (
         <div>
@@ -35,12 +41,12 @@ function OpenWater() {
                                 </li>
                                 <li className="nav-item dropdown">
 
-                                    <a className="nav-link active dropdown-toggle" href="test.html" id="nav-dropdown" data-bs-toggle="dropdown"
+                                    <a className="nav-link dropdown-toggle" href="test.html" id="nav-dropdown" data-bs-toggle="dropdown"
                                         aria-expanded="false" >
                                         Courses
                                     </a>
 
-                                    <ul className="dropdown-menu active" aria-labelledby="nav-dropdown">
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
                                         <li><a className="dropdown-item active" href="/OpenWater">Open Water</a></li>
                                         <li><a className="dropdown-item" href="/AdvOpenWater">Advanced Open Water</a></li>
                                         <li><a className="dropdown-item" href="/Rescue">Rescue Diving</a></li>
@@ -54,7 +60,7 @@ function OpenWater() {
                                     <a className="nav-link" href="/Products">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="/AboutUs">About Us</a>
+                                    <a className="nav-link active " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/">Contact</a>
@@ -66,104 +72,120 @@ function OpenWater() {
 
             </header>
             <main role="main">
-                <div className="container-fluid jumbotron jumbotron-detail-open-water py-5">
+                <div className="container-fluid jumbotron jumbotron-team py-5">
                     <div className="container">
-                        <h1 className="display-3 fw-bold text-white">Open Water Dive</h1>
+                        <h1 className="display-3 fw-bold text-white">About Us</h1>
                     </div>
                 </div>
 
                 <div className="container">
 
-                    <h1 className="fw-bolder">Open Water Dive
-                        <small className="fw-normal fst-italic"> Most Exciting course for the beginner!</small>
+                    <h1 className="fw-bolder"> Our Team
+                        <small className="fw-normal fst-italic"> A Brief Story of Us!</small>
                     </h1>
 
                     <div className="row ">
 
                         <div className="col-6 col-lg-8">
 
-                            {/* <img src={discoverscuba} className="img-fluid rounded-1" alt="test" />  */}
+                            <img src={aboutdiveteam} className="img-fluid rounded-1" alt="test" />
 
-                            <div className="container-openwater">
-                                <iframe className="responsive-iframe"
-                                    src="https://www.youtube.com/embed/mw-_-sUBPEc?autoplay=1&mute=1"
-                                    title="YouTube video player">
-                                </iframe>
-                            </div>
 
                         </div>
 
 
 
-                        <div className="col-6 col-lg-4">
-                            <h3 className="my-3">About Open Water Dive Course</h3>
-                            <p className="lead text-center">Join the exciting adveture of our Open Water Course!</p>
-                            <p className="user-select-none">This program is for the individual who is seeking Scuba certification. The course is approximately
-                                30 hours of private or semi-private Scuba instruction. Private instruction enables our instructors
-                                to provide a safe and comfortable diving experience that meets your individual needs. This is a
-                                complete Scuba course that combines instruction in basic watermanship skills, diving theory, and
-                                practical diving experience. The emphasis will be on making you a safe, self-sufficient, and
-                                self-reliant diver. Certification cards will be issued upon completion.
+                        <div className="col-6 col-lg-12">
+                            <h3 className="my-3">About Us!</h3>
+                            { /* <p className="lead text-center">Join the exciting adveture of our Open Water Course!</p> */}
+                            <p className="user-select-none">
+                                <section>
+                                    Gino Ruperez is the owner of Celtic Sea Dive Shop located in Kinsale, Southwest coast of Ireland
+                                    near Celtic Sea. It has been in operation since 2015 in Ireland. The idea of forming a Dive Shop
+                                    is one of dreams by owner who has greatly influenced and inspired by his spectacular experiences
+                                    in doing underwater activities by his PADI professional diving instructors and diving friends
+                                    who work from Jeddah Saudi Arabia as an expat for several years. Diving in the Red Sea is a fun
+                                    filled recreational activities that helps them to alleviate the boredom and loneliness of being
+                                    thousands of miles away from their family.
+                                </section>
+                                <br />
+
+                                <section>
+                                    The owner got an interest in pursuing a goal of learning to dive in an open water of Red Sea in
+                                    the south of Jeddah while he was working in Saudi as an expat. Fortunately, he met his
+                                    professional PADI Irish instructor David John Walker and few diving buddies.
+                                </section>
+                                <br />
+                                <section>
+                                    After immigrating to Ireland in 2015 and settled in Kinsale, he started to form a team of
+                                    professional divers along with David John Walker as the lead instructor. Kinsale has some
+                                    amazing dive locations and is the perfect place to learn to dive.
+                                </section>
+                                <br />
+                                <section>
+                                    The Celtic Sea Dive shop aims to provide training and education in a fun-filled safe environment
+                                    to people from all walks of life.
+                                </section>
+                                <br />
+                                <section>
+                                    The team helps people conquer their fear in an open water. They focus mainly in making sure
+                                    anybody visiting them has an unforgettable experience and leave with a smile. It also offers a
+                                    wide range of diving equipment and accessories with high quality brands
+
+                                </section>
+                                <br />
+                                <section>
+                                    Since 2017, Celtic Sea Dive shop is one of the premier dive shops in the country and it is a
+                                    proud <strong><em>5 star PADI facility</em></strong> as well as sales and repairs.
+                                </section>
+                                <br />
                             </p>
-                            <h3>This course includes the following :</h3>
-                            <ul>
-                                <li>PADI Open Water booklet</li>
-                                <li>5 Classroom Sessions</li>
-                                <li>5 Pool Sessions</li>
-                                <li>5 Ocean Dives</li>
-                            </ul>
-                            <p className="user-select-none">All equipment will be provided for
-                                the length of the course.</p>
-
-                            <div className="row">
-
-                                <div className="col-md-4">
-                                    <strong>$200.00</strong>
-                                </div>
-                                <div className="col-md-8">
-                                    <a type="button" href="shoppingbasket.html" className="btn btn-success float-end"
-                                        data-bs-toggle="offcanvas" data-bs-target="a.html" aria-controls="shoppingCart">
-                                        Add to cart
-                                    </a>
-                                </div>
-                            </div>
                         </div>
                     </div>
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                        <h4>A quote from Uknown...</h4>
-                        <p className="mb-0 fst-italic"> No matter how much you travel, if you don’t dive, you cannot say you’ve seen the world.
+                        <h4>A quote from Celtic Diving Team</h4>
+                        <p className="mb-0 fst-italic"> We dive not to escape life, but for life not to escape us.
                         </p>
                     </div>
 
-                    <h3 className="display-5 my-4">Other customers also tried...</h3>
+                    <h3 className="display-5 my-4">Meet the Team...</h3>
 
-                    <div className="row">
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
-                                <img className="img-fluid" src={homedolphin} alt="" />
-                            </a>
-                            <p>Close encouter with Dolphin</p>
-                        </div>
+                    <div className="container history">
+                        
+                        <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-4">
+                        
+                            <div className="col">
+                                <div className="card rounded mb-4 shadow-sm">
+                                    <img className="card-img-top" src={diverjohn} alt="dolphinsmall" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">David John Walker</h5>
+                                        <p className="card-text">Certified PADI Instructor</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
 
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
-                                <img className="img-fluid" src={mermaid} alt="" />
-                            </a>
-                            <p>Discover Mermaid</p>
-                        </div>
+                            <div className="col">
+                                <div className="card rounded mb-4 shadow-sm">
+                                    <img className="card-img-top" src={divergino} alt="diver" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Gino Ruperez</h5>
+                                        <p className="card-text">Certified Rescue Diver and Owner</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
 
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
-                                <img className="img-fluid" src={photography} alt="" />
-                            </a>
-                            <p>Underwater Photography</p>
-                        </div>
-
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
-                                <img className="img-fluid" src={boatdiver} alt="" />
-                            </a>
-                            <p>Boat Diving</p>
+                            <div className="col">
+                                <div className="card rounded mb-4 shadow-sm">
+                                    <img className="card-img-top" src={diverfiona} alt="services advanced open water" />
+                                    <div className="card-body">
+                                        <h5 className="card-title">Fiona Madrigal</h5>
+                                        <p className="card-text">Certified PADI Instructor</p>
+                                    </div>
+                                    
+                                </div>
+                            </div>
 
                         </div>
                     </div>
@@ -246,4 +268,4 @@ function OpenWater() {
     );
 }
 
-export default OpenWater;
+export default AboutUs;
