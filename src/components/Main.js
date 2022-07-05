@@ -50,7 +50,7 @@ function Main() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Dive Shop</a>
+                                    <a className="nav-link" href="/Products">Dive Shop</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link " href="/">

@@ -1,0 +1,131 @@
+{
+    "products" :[
+        {
+            "id" : 1,
+            "title": "Wet Suit",
+            "type": "Dive Suit",
+            "description": "Scuabpro EVERDRY 4.0 WN L",
+            "filename": "https://scubapro.johnsonoutdoors.eu/sites/eu_johnsonoutdoors-store/files/assets/images/10/1/1098365_primary/1098365_primary.jpg",
+            "height": 600,
+            "width": 400,
+            "price": 28.1,
+            "rating": 4
+        },
+        {
+            "id" : 2,
+            "title": "Hats",
+            "type": "Accessories",
+            "description": "PADI Cap",
+            "filename": "https://cdn.shopify.com/s/files/1/0214/3620/3072/products/PADI-Merchant-Tailor-Hats-Blue-Camo-Trucker-3_460x460@2x.jpg?v=1603398534",
+            "height": 450,
+            "width": 299,
+            "price": 29.45,
+            "rating": 4
+          }, {
+            "id" : 3,
+            "title": "Diving Boots",
+            "type": "Boots",
+            "description": "Scuabpro DELTA BOOT 6.5 BLK 4XL",
+            "filename": "https://files.evediving.com/store/7716/StoreFiles/ProductImages/Scubpro/Dive%20Wear/500x500/Boots_Delta1.jpg",
+            "height": 450,
+            "width": 299,
+            "price": 18.95,
+            "rating": 3
+          }, {
+            "id" : 4,
+            "title": "Regulator",
+            "type": "Diving Equipment",
+            "description": "Scubapro MK17 DIN / C370 / R095 Octopus",
+            "filename": "https://files.evediving.com/store/7716/StoreFiles/ProductImages/Scubpro/Regulator%20Set/500x500/C370_Reg_Left_LR1.jpg",
+            "height": 600,
+            "width": 399,
+            "price": 17.68,
+            "rating": 4
+          },
+          {
+            "id" : 5,
+            "title": "Buoyancy Control Device",
+            "type": "Diving Equipment",
+            "description": "Scubapro Equator BCD",
+            "filename": "https://files.evediving.com/store/7716/StoreFiles/ProductImages/Scubpro/BCDs/500x500/Equator.jpg",
+            "height": 450,
+            "width": 675,
+            "price": 11.14,
+            "rating": 4
+          },
+          {
+            "id" : 6,
+            "title": "Dive Mask",
+            "type": "Mask",
+            "description": "SUUNTO Spectra Mask",
+            "filename": "https://files.evediving.com/store/7716/StoreFiles/ProductImages/Scubpro/Mask/500x500/SPECTRA_rd_24847320_S.jpg",
+            "height": 450,
+            "width": 301,
+            "price": 27.35,
+            "rating": 0
+          }, {
+            "id" : 7,
+            "title": "Dive Lights",
+            "type": "Dive Accessories",
+            "description": "Anchor Dive Lights ARRON - Series 1K Spot ( Blue)",
+            "filename": "https://anchordivelights.com/wp-content/uploads/2019/12/Arran_01_300x300-1.png",
+            "height": 600,
+            "width": 399,
+            "price": 28.59,
+            "rating": 4
+          },{
+            "id" : 8,
+            "title": "Fins",
+            "type": "Diving Equipment",
+            "description": "Scuabpro JET SPORT FIN, yellow, Size L",
+            "filename": "https://tauchen.johnsonoutdoors.com/Catalog/Media/Images/609256-003-0005687_m.jpg",
+            "height": 400,
+            "width": 600,
+            "price": 14.18,
+            "rating": 1
+          }, {
+            "id" : 9,
+            "title": "Bathrobe",
+            "type": "Towels",
+            "description": "Microfiber bathrobe",
+            "filename": "https://assets.mareshop.eu/media/catalog/product/cache/23/image/600x600/9df78eab33525d08d6e5fb8d27136e95/a/q/aquasphere-waterwayroyal_1.jpg",
+            "height": 600,
+            "width": 398,
+            "price": 19.49,
+            "rating": 4
+          },
+          {
+            "id" : 10,
+            "title": "Scuba Tank",
+            "type": "Cylinder",
+            "description": "Colored Scuba Cylinder",
+            "filename": "https://www.americandivers.net/assets/imgPageThumb/Tanks.jpg",
+            "height": 600,
+            "width": 400,
+            "price": 28.86,
+            "rating": 2
+          },
+          { 
+            "id" : 11,
+            "title": "Dive Gloves",
+            "type": "Gloves",
+            "description": "Aqualung Gloves, Admiral Wmn's",
+            "filename": "https://usfiles.evediving.com/store/5415/StoreFiles/ProductImages/Aqualung/Gloves/500x500/admiral%20purp4.jpg",
+            "height": 600,
+            "width": 400,
+            "price": 25.62,
+            "rating": 3
+          },
+          {
+            "id" : 12,
+            "title": "Dive Knives",
+            "type": "Knife",
+            "description": "Innovative Scuba Knife w/Line Cutter",            
+            "filename": "https://usfiles.evediving.com/store/5415/StoreFiles/ProductImages/Innovative%20Scuba/Knives/500x500/gumgna_1200_900.jpg",
+            "height": 600,
+            "width": 401,
+            "price": 18.18,
+            "rating": 1
+          }
+    ]
+}
