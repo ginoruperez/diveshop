@@ -121,11 +121,10 @@ function Main() {
                                 Our Company
                             </h2>
                             <section>
-                                Our Dive Shop is located in Kilmessan Village Co. Meath. We stock a wide range of Scubapro, 
-                                Mares, Apeks and Aqualung dive equipment.  
+                                Our Dive Shop is located in Kinsale, Southwest coast of Ireland near Celtic Sea. We stock a wide range of 
+                                Scubapro, Mares, Apeks and Aqualung dive equipment.  
                                 
-                                For convenience customers may also order from our on line shop.
-
+                                For convenience, customers may also order from our on line shop.
                                 We are PADI accredited servicing and our test centre is also located within our shop
 
                                 With exclusive deals in Malta and Gozo and other fantastic dive locations around Ireland, 

@@ -1,5 +1,5 @@
 (function () {
-    'use strict'
+  
   
     var forms = document.querySelectorAll('.needs-validation')
   
@@ -9,6 +9,9 @@
           if (!form.checkValidity()) {
             event.preventDefault()
             event.stopPropagation()
+          }
+          else{
+           alert("Thank you! The Form is successfully Submitted.")
           }
   
           form.classList.add('was-validated')

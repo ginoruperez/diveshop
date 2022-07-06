@@ -6,6 +6,7 @@ import homedolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
 import boatdiver from './images/products/boatdiver.jpg';
 import dolphin3 from './images/dolphin3.png';
+import './js/form-validation'
 
 
 function Contact() {
@@ -35,13 +36,13 @@ function Contact() {
                                 </li>
                                 <li className="nav-item dropdown">
 
-                                    <a className="nav-link active dropdown-toggle" href="test.html" id="nav-dropdown" data-bs-toggle="dropdown"
+                                    <a className="nav-link dropdown-toggle" href="test.html" id="nav-dropdown" data-bs-toggle="dropdown"
                                         aria-expanded="false" >
                                         Courses
                                     </a>
 
                                     <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
-                                        <li><a className="dropdown-item active" href="/OpenWater">Open Water</a></li>
+                                        <li><a className="dropdown-item" href="/OpenWater">Open Water</a></li>
                                         <li><a className="dropdown-item" href="/AdvOpenWater">Advanced Open Water</a></li>
                                         <li><a className="dropdown-item" href="/Rescue">Rescue Diving</a></li>
                                         <li>
@@ -65,6 +66,7 @@ function Contact() {
                 </nav>
 
             </header>
+
             <main role="main">
 
                 <div className="container-fluid jumbotron jumbotron-detail-open-water py-5">
@@ -80,46 +82,86 @@ function Contact() {
                         <small className="fw-normal fst-italic"> Send us an email, we'd love to hear from you.</small>
                     </h1>
 
-                    <form method="post">
-                        
+
+                    <form class="needs-validation" action="/" method="get" novalidate>
+
 
                         <div className="row mt-3">
                             <div className="col-md-6">
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Your Name *" aria-label="name" />
+                                    
+                                    <input type="text" className="form-control" placeholder="Your Name *" required />
+                                    <div className="invalid-feedback">
+                                        Valid Name is required.
+                                    </div>
                                 </div>
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Your Email *" aria-label="email" />
+                                    <h5>Select Services required</h5>
+                                    <select className="form-control" id="services">
+                                        <option value="dicoverscuba">Discover Scuba Diving</option>
+                                        <option value="snorkeling">Snorkeling</option>
+                                        <option value="openwater">PADI Open Water</option>
+                                        <option value="advancedopenwater">PADI Advanced Open Water</option>
+                                        <option value="rescuediver">PADI Rescue Diver</option>
+                                        <option value="rescuediver">Scuba Diving Skills Update</option>
+                                        <option value="divingequipment">Scuba Diving Equipment and Accessories</option>
+                                        <option value="divingequipment">Air Tank Refill</option>
+                                        <option value="others">Others</option>
+                                    </select>
+                                </div>
+
+                                <div className="mb-2">
+                                    <input type="text" className="form-control" placeholder="Your Email *" aria-label="email" required/>
                                 </div>
                                 <div className="mb-2">
                                     <input type="text" className="form-control" placeholder="Your Phone Number *"
-                                        aria-label="phone" />
+                                        aria-label="phone" required />
                                 </div>
                                 <div className="mb-2">
-                                    <button type="button" className="btn btn-primary" id="sendMessage">Send Message</button>
+                                    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                        Send Message
+                                    </button>
+
                                 </div>
                             </div>
                             <div className="col-md-6">
                                 <div>
-                                    <textarea className="form-control" placeholder="Your Message *" rows="5"></textarea>
+                                    <textarea className="form-control" placeholder="Your Message *" rows="5" required></textarea>
                                 </div>
                             </div>
                         </div>
                     </form>
 
-                    <div className="toast position-fixed bottom-0 start-50 translate-middle-x mb-3">
-                        <div id="sendMessage" className="toast hide" role="alert" aria-live="assertive" aria-atomic="true">
-                            <div className="toast-header">
-                                <strong className="me-auto">Thank you for sending your message.</strong>
-                                <button type="button" className="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
-                            </div>
-                            <div className="toast-body">
-                                We successfully received your message. We will get in touch soon!
+                  
+                   {/* 
+
+                    <div className="modal" id="myModal">
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+
+                                <div classNme="modal-header">
+                                    <h4 className="modal-title">Thank you</h4>
+
+                                </div>
+
+                                <div className="modal-body">
+                                    We successfully received your message. We will get in touch soon!
+                                </div>
+
+                                <div className="modal-footer">
+                                    
+                                    <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
+                */}
+
                 </div>
+
+
 
 
             </main>
@@ -193,6 +235,8 @@ function Contact() {
 
 
             </footer>
+
+
 
         </div >
     );

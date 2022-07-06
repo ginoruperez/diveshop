@@ -117,7 +117,7 @@ function AboutUs() {
                                 </section>
                                 <br />
                                 <section>
-                                    After immigrating to Ireland in 2015 and settled in Kinsale, he started to form a team of
+                                    After immigrating to Ireland and settled in Kinsale, he started to form a team of
                                     professional divers along with David John Walker as the lead instructor. Kinsale has some
                                     amazing dive locations and is the perfect place to learn to dive.
                                 </section>
@@ -135,7 +135,7 @@ function AboutUs() {
                                 </section>
                                 <br />
                                 <section>
-                                    Since 2017, Celtic Sea Dive shop is one of the premier dive shops in the country and it is a
+                                    Since 2010, Celtic Sea Dive shop is one of the premier dive shops in the country and it is a
                                     proud <strong><em>5 star PADI facility</em></strong> as well as sales and repairs.
                                 </section>
                                 <br />
