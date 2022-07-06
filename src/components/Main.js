@@ -56,7 +56,7 @@ function Main() {
                                     <a className="nav-link " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Contact</a>
+                                    <a className="nav-link" href="/Contact">Contact</a>
                                 </li>
 
                             </ul>
