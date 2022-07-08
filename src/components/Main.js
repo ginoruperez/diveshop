@@ -86,10 +86,9 @@ function Main() {
                         </div>
                         <div className="carousel-item welcome-carousel-image2">
                             <div className="carousel-caption text-start">
-                                <h1>Discover our Celtic Dive subscription</h1>
-                                <p>Sign up for our Monthly, Weekly or Yearly subscription.</p>
-                                <p><a className="btn btn-lg btn-primary" href="/" role="button">Sign up
-                                    today</a></p>
+                                <h1>High Quality Scuba Diving Products</h1>
+                                <p>Shop with our wide range of High Quality Products</p>
+                                <p><a className="btn btn-lg btn-primary" href="/Products" role="button">Dive Shop</a></p>
                             </div>
                         </div>
                         <div className="carousel-item welcome-carousel-image3">
@@ -184,7 +183,7 @@ function Main() {
                                     <p className="card-text">Feels Great to swim with our Dolphin!</p>
                                 </div>
                                 <div className="card-footer">
-                                    <a href="/" className="btn btn-primary">View details</a>
+                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                 </div>
                             </div>
                         </div>

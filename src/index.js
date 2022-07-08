@@ -15,6 +15,7 @@ import AllCourses from './components/AllCourses';
 import Products from './components/Products';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
+import Order from './components/Order';
 
 
 
@@ -32,6 +33,7 @@ root.render(
       <Route path="Products" element={<Products />} />
       <Route path="AboutUs" element={<AboutUs />} />
       <Route path="Contact" element={<Contact />} />
+      <Route path="Order" element={<Order />} />
 
 
     </Routes>

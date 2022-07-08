@@ -57,7 +57,7 @@ function OpenWater() {
                                     <a className="nav-link " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Contact</a>
+                                    <a className="nav-link" href="/Contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -118,19 +118,19 @@ function OpenWater() {
                             <div className="row">
 
                                 <div className="col-md-4">
-                                    <strong>$200.00</strong>
+                                    <strong>€ 200.00</strong>
                                 </div>
                                 <div className="col-md-8">
-                                    <a type="button" href="shoppingbasket.html" className="btn btn-success float-end"
-                                        data-bs-toggle="offcanvas" data-bs-target="a.html" aria-controls="shoppingCart">
-                                        Add to cart
+                                    <a type="button" href="/Order" className="btn btn-success float-end"
+                                        data-bs-toggle="offcanvas" data-bs-target="/Order" aria-controls="shoppingCart">
+                                        Order
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                        <h4>A quote from Uknown...</h4>
+                        <h4>A quote from the Diving Team...</h4>
                         <p className="mb-0 fst-italic"> No matter how much you travel, if you don’t dive, you cannot say you’ve seen the world.
                         </p>
                     </div>
@@ -139,28 +139,28 @@ function OpenWater() {
 
                     <div className="row">
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={homedolphin} alt="" />
                             </a>
                             <p>Close encouter with Dolphin</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={mermaid} alt="" />
                             </a>
                             <p>Discover Mermaid</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={photography} alt="" />
                             </a>
                             <p>Underwater Photography</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={boatdiver} alt="" />
                             </a>
                             <p>Boat Diving</p>

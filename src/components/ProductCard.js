@@ -7,58 +7,63 @@ import { Card, CardContent, CardHeader, Container, CardActions, Typography, Icon
 
 
 
-export default function ProductCard({product}) {
+export default function ProductCard({ product }) {
 
-const [active,setActive]=useState(true);
- 
+  const [active, setActive] = useState(true);
+
   return (
 
     <Container>
-         <Card elevation={2}>
-      <CardHeader 
-      action= {
-        <IconButton onClick={e => {
-          console.log("add to fav", product.id)
-          setActive(!active);
-          
+      <Card elevation={2}>
+        <CardHeader
+          action={
+            <IconButton onClick={e => {
+              console.log("add to fav", product.id)
+              setActive(!active);
 
-        }}
-       
-        >
-          {active ? <FavoriteBorderSharpIcon /> : <FavoriteIcon color="secondary"/>}
 
-        </IconButton>
-      }
-      title={product.title}
-      subheader = {product.type}
-      
-      />
-      <CardMedia
-        component="img"
-        height="300"
-        width="300"
-        image={product.filename}
-        alt={product.rating}
-      />
-      <CardContent>
-      <Typography variant="body2" color="text.secondary">
-        {product.description}
+            }}
 
-      </Typography>
-      
-      </CardContent>
-      <CardActions sx={{   display: "flex",
-    justifyContent: "space-between"}}>
-      <IconButton>
-         <ShoppingCartIcon color="secondary" />
-        </IconButton>
+            >
+              {active ? <FavoriteBorderSharpIcon /> : <FavoriteIcon color="secondary" />}
 
-        <IconButton>
-         <CheckIcon color="error" />
-        </IconButton>
-      </CardActions>
+            </IconButton>
+          }
+          title={product.title}
+          subheader={product.type}
 
-    </Card>
+
+        />
+        <CardMedia
+          component="img"
+          height="300"
+          width="300"
+          image={product.filename}
+          alt={product.rating}
+        />
+        <CardContent>
+          <Typography variant="body2" color="text.secondary">
+            {product.description}
+
+          </Typography>
+
+          <Typography variant="body2" color="text.primary">
+            € {product.price}
+
+          </Typography>
+
+        </CardContent>
+        <CardActions sx={{
+          display: "flex",
+          justifyContent: "space-between"
+        }}>
+          <IconButton onClick={() => window.location.replace("/Order")}>
+            <ShoppingCartIcon color="secondary" />
+          </IconButton>
+
+        </CardActions>
+
+      </Card>
     </Container>
   )
 }

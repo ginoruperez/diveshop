@@ -69,11 +69,13 @@ function Contact() {
 
             <main role="main">
 
-                <div className="container-fluid jumbotron jumbotron-detail-open-water py-5">
+                <div className="container-fluid jumbotron jumbotron-contact py-5">
                     <div className="container">
                         <h1 className="display-3 fw-bold text-white">Contact Us</h1>
                     </div>
                 </div>
+
+
 
 
                 <div className="container">
@@ -89,7 +91,7 @@ function Contact() {
                         <div className="row mt-3">
                             <div className="col-md-6">
                                 <div className="mb-2">
-                                    
+
                                     <input type="text" className="form-control" placeholder="Your Name *" required />
                                     <div className="invalid-feedback">
                                         Valid Name is required.
@@ -111,7 +113,7 @@ function Contact() {
                                 </div>
 
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Your Email *" aria-label="email" required/>
+                                    <input type="text" className="form-control" placeholder="Your Email *" aria-label="email" required />
                                 </div>
                                 <div className="mb-2">
                                     <input type="text" className="form-control" placeholder="Your Phone Number *"
@@ -132,37 +134,11 @@ function Contact() {
                         </div>
                     </form>
 
-                  
-                   {/* 
-
-                    <div className="modal" id="myModal">
-                        <div className="modal-dialog">
-                            <div className="modal-content">
-
-                                <div classNme="modal-header">
-                                    <h4 className="modal-title">Thank you</h4>
-
-                                </div>
-
-                                <div className="modal-body">
-                                    We successfully received your message. We will get in touch soon!
-                                </div>
-
-                                <div className="modal-footer">
-                                    
-                                    <button type="button" className="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                </div>
-
-                            </div>
-                        </div>
+                    <div className="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33251.37800359915!2d-8.52782481229902!3d51.725289697707915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1763db1d99ded19!2sSouth%20West%20Technical%20Diving!5e0!3m2!1sen!2sie!4v1657224321670!5m2!1sen!2sie" width="600" height="450" 
+                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="location"></iframe>
                     </div>
-
-                */}
-
                 </div>
-
-
-
 
             </main>
 

@@ -63,7 +63,7 @@ function AboutUs() {
                                     <a className="nav-link active " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Contact</a>
+                                    <a className="nav-link" href="/Contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -151,17 +151,27 @@ function AboutUs() {
                     <h3 className="display-5 my-4">Meet the Team...</h3>
 
                     <div className="container history">
-                        
+
                         <div className="row row-cols-1 row-cols-sm-3 row-cols-md-4 g-4">
-                        
+
                             <div className="col">
                                 <div className="card rounded mb-4 shadow-sm">
                                     <img className="card-img-top" src={diverjohn} alt="dolphinsmall" />
                                     <div className="card-body">
                                         <h5 className="card-title">David John Walker</h5>
-                                        <p className="card-text">Certified PADI Instructor</p>
+                                        <p className="card-text"><strong> <em>Certified PADI Instructor</em> </strong> He is qualified to teach a wide range of
+                                            diving courses:
+                                            <ul>
+                                                <li>Open Water Dive</li>
+                                                <li>Advanced Open Water Dive</li>
+                                                <li>Search and Rescue Dive</li>
+                                                <li>Drysuit Course</li>
+                                                <li>Navigation</li>
+                                                <li>Underwater Video and Photography</li>
+                                                <li>Deep Technical Diving</li>
+                                            </ul></p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -170,9 +180,11 @@ function AboutUs() {
                                     <img className="card-img-top" src={divergino} alt="diver" />
                                     <div className="card-body">
                                         <h5 className="card-title">Gino Ruperez</h5>
-                                        <p className="card-text">Certified Rescue Diver and Owner</p>
+                                        <p className="card-text">He enjoys all diving and has a special love
+                                            of underwater Photography. He is a certified PADI open water, PADI advanced open water
+                                            and Rescue Diver. He is a qualified PADI instructor.</p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
@@ -181,9 +193,11 @@ function AboutUs() {
                                     <img className="card-img-top" src={diverfiona} alt="services advanced open water" />
                                     <div className="card-body">
                                         <h5 className="card-title">Fiona Madrigal</h5>
-                                        <p className="card-text">Certified PADI Instructor</p>
+                                        <p className="card-text">joined in 2017 and qualified as Dive Master
+                                            since 2008.
+                                            Fiona is an integral member of our dive center and is our senior Assistant instructor.</p>
                                     </div>
-                                    
+
                                 </div>
                             </div>
 
