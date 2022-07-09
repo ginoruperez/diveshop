@@ -107,7 +107,7 @@ export default function Products() {
       </header>
       <div className="container-fluid jumbotron jumbotron-shop py-5">
         <div className="container">
-          <h1 className="display-3 fw-bold text-white">Open Water Dive</h1>
+          <h1 className="display-3 fw-bold text-white">Dive Shop</h1>
         </div>
       </div>
 

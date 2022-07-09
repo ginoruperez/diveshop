@@ -5,9 +5,6 @@ import CheckIcon from '@mui/icons-material/Check';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { Card, CardContent, CardHeader, Container, CardActions, Typography, IconButton, CardMedia } from '@mui/material'
 
-import openwatersmall from './images/products/services-openwater-small.jpg';
-import advancedopensmall from './images/products/services-advancedopen-small.jpg';
-
 
 
 export default function ProductCard({ product }) {
@@ -67,7 +64,6 @@ export default function ProductCard({ product }) {
         </CardActions>
 
       </Card>
-
     </Container>
   )
 }
