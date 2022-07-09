@@ -59,6 +59,18 @@ function AdvOpenWater() {
                                 <li className="nav-item">
                                     <a className="nav-link" href="/Contact">Contact</a>
                                 </li>
+                                <li className="nav-item dropdown">
+
+                                    <a className="nav-link dropdown-toggle" href="/" id="nav-dropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false" >
+                                        Extras
+                                    </a>
+
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+                                        <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
+                                        <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -104,9 +116,11 @@ function AdvOpenWater() {
                             <h3>This course includes the following :</h3>
                             <ul>
                                 <li>PADI Advanced Open Water booklet</li>
+                                <li>Access to PADI eLearning course</li>
                                 <li>15 Hours Classroom Sessions</li>
-                                <li>15 Hours Pool Training</li>
-                                <li>5 Ocean Dives</li>
+                                <li>5 Ocean Dives including night Dives</li>
+                                <li>PADI Advanced Open water Exam</li>
+
                             </ul>
                             <p className="user-select-none">All equipment will be provided for
                                 the length of the course.</p>
@@ -118,7 +132,7 @@ function AdvOpenWater() {
                                 </div>
                                 <div className="col-md-8">
                                     <a type="button" href="/Order" className="btn btn-success float-end"
-                                         data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
+                                        data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
                                         Order
                                     </a>
                                 </div>
@@ -308,10 +322,10 @@ function AdvOpenWater() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
                             </div>
 
 
@@ -320,7 +334,8 @@ function AdvOpenWater() {
                                     <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
                                 </li>
                                 <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">info@celticdiveshop.com</span>
+                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
+                                        <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
                                 </li>
                                 <li className="mb-3">
                                     <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>

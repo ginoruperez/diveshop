@@ -67,6 +67,18 @@ function AllCourses() {
                                 <li className="nav-item">
                                     <a className="nav-link" href="/">Contact</a>
                                 </li>
+                                <li className="nav-item dropdown">
+
+                                    <a className="nav-link dropdown-toggle" href="/" id="nav-dropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false" >
+                                        Extras
+                                    </a>
+
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+                                        <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
+                                        <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -91,7 +103,7 @@ function AllCourses() {
                                 </button>
                             </h2>
                             <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne"
-                                data-bs-parent="#fruitPiesAccordion">
+                                data-bs-parent="#diveAccordion">
                                 <div className="accordion-body">
                                     <div className="row">
                                         <div className="col-md-4">
@@ -154,7 +166,7 @@ function AllCourses() {
                                 </button>
                             </h2>
                             <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo"
-                                data-bs-parent="#fruitPiesAccordion">
+                                data-bs-parent="#diveAccordion">
                                 <div className="accordion-body">
                                     <div className="row">
                                         <div className="col-md-4">
@@ -194,7 +206,7 @@ function AllCourses() {
                                 </button>
                             </h2>
                             <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree"
-                                data-bs-parent="#fruitPiesAccordion">
+                                data-bs-parent="#diveAccordion">
                                 <div className="accordion-body">
                                     <div className="row">
                                         <div className="col-md-4">
@@ -223,7 +235,7 @@ function AllCourses() {
                                         </div>
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" alt = "snorkeling" src={snorkel} />
+                                                <img className="card-img-top" alt="snorkeling" src={snorkel} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Snorkelling</h5>
                                                     <p className="card-text">€50.00</p>
@@ -340,10 +352,10 @@ function AllCourses() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
                             </div>
 
 
@@ -352,7 +364,8 @@ function AllCourses() {
                                     <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
                                 </li>
                                 <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">info@celticdiveshop.com</span>
+                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
+                                        <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
                                 </li>
                                 <li className="mb-3">
                                     <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>

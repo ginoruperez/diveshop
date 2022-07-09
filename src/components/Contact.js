@@ -60,6 +60,18 @@ function Contact() {
                                 <li className="nav-item">
                                     <a className="nav-link active" href="/Contact">Contact</a>
                                 </li>
+                                <li className="nav-item dropdown">
+
+                                    <a className="nav-link dropdown-toggle" href="/" id="nav-dropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false" >
+                                        Extras
+                                    </a>
+
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+                                        <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
+                                        <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -135,8 +147,8 @@ function Contact() {
                     </form>
 
                     <div className="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33251.37800359915!2d-8.52782481229902!3d51.725289697707915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1763db1d99ded19!2sSouth%20West%20Technical%20Diving!5e0!3m2!1sen!2sie!4v1657224321670!5m2!1sen!2sie" width="600" height="450" 
-                         allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="location"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33251.37800359915!2d-8.52782481229902!3d51.725289697707915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1763db1d99ded19!2sSouth%20West%20Technical%20Diving!5e0!3m2!1sen!2sie!4v1657224321670!5m2!1sen!2sie" width="600" height="450"
+                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="location"></iframe>
                     </div>
                 </div>
 
@@ -159,10 +171,10 @@ function Contact() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
                             </div>
 
 
@@ -171,7 +183,8 @@ function Contact() {
                                     <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
                                 </li>
                                 <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">info@celticdiveshop.com</span>
+                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
+                                        <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
                                 </li>
                                 <li className="mb-3">
                                     <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>

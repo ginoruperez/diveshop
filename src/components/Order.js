@@ -54,6 +54,18 @@ function Order() {
                                 <li className="nav-item">
                                     <a className="nav-link" href="/Contact">Contact</a>
                                 </li>
+                                <li className="nav-item dropdown">
+
+                                    <a className="nav-link dropdown-toggle" href="/" id="nav-dropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false" >
+                                        Extras
+                                    </a>
+
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+                                        <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
+                                        <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                                    </ul>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -84,7 +96,7 @@ function Order() {
                                 <div className="row g-3">
                                     <div className="col-sm-6">
                                         <label for="firstName" className="form-label">First name</label>
-                                        <input type="text" className="form-control" id="firstName" placeholder=""   />
+                                        <input type="text" className="form-control" id="firstName" placeholder="" />
                                         <div className="invalid-feedback">
                                             Valid first name is required.
                                         </div>
@@ -92,7 +104,7 @@ function Order() {
 
                                     <div className="col-sm-6">
                                         <label for="lastName" className="form-label">Last name</label>
-                                        <input type="text" className="form-control" id="lastName" placeholder=""   />
+                                        <input type="text" className="form-control" id="lastName" placeholder="" />
                                         <div className="invalid-feedback">
                                             Valid last name is required.
                                         </div>
@@ -275,10 +287,10 @@ function Order() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
                             </div>
 
 
@@ -287,7 +299,8 @@ function Order() {
                                     <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
                                 </li>
                                 <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">info@celticdiveshop.com</span>
+                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
+                                        <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
                                 </li>
                                 <li className="mb-3">
                                     <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>
