@@ -95,7 +95,7 @@ function Main() {
                     <div className="carousel-inner">
                         <div className="carousel-item welcome-carousel-image1 active">
                             <div className="carousel-caption">
-                                <h1>Welcome to Celtic Dive Shop</h1>
+                                <h1>Welcome to Celtic Sea Dive Shop</h1>
                                 <p>The best place for Underwater adventure.</p>
                             </div>
                         </div>
@@ -108,7 +108,7 @@ function Main() {
                         </div>
                         <div className="carousel-item welcome-carousel-image3">
                             <div className="carousel-caption text-end">
-                                <h1>Browse all Dive Adventure.</h1>
+                                <h1>Browse all our Dive Adventures.</h1>
                                 <p>Every season has its special activities. Enjoy our summer fun dive activities.</p>
                                 <p><a className="btn btn-lg btn-primary" href="/OpenWater" role="button">Open Water</a></p>
                             </div>
@@ -219,7 +219,7 @@ function Main() {
                                 <img className="card-img-top" src={servicesadvancedopen} alt="services advanced open water" />
                                 <div className="card-body">
                                     <h5 className="card-title">Advanced Open Water</h5>
-                                    <p className="card-text">It was so fun!</p>
+                                    <p className="card-text">This is sooooo cool and exhilarating!</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="/AdvOpenWater" className="btn btn-primary">View details</a>
