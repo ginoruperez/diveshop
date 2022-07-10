@@ -59,7 +59,7 @@ function AllCourses() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/Products">Shop</a>
+                                    <a className="nav-link" href="/Shop">Shop</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link " href="/AboutUs">About Us</a>
@@ -147,7 +147,7 @@ function AllCourses() {
                                                 <img className="card-img-top" alt="open water" src={openwater} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Open Water Dive</h5>
-                                                    <p className="card-text">€250.00</p>
+                                                    <p className="card-text">€200.00</p>
                                                 </div>
                                                 <div className="card-footer">
                                                     <a href="/OpenWater" className="btn btn-primary">View details</a>
@@ -174,7 +174,7 @@ function AllCourses() {
                                                 <img className="card-img-top" alt="advanced open water" src={advopenwater} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Advanced Open Water</h5>
-                                                    <p className="card-text">€300.00</p>
+                                                    <p className="card-text">€250.00</p>
                                                 </div>
                                                 <div className="card-footer">
                                                     <a href="/AdvOpenWater" className="btn btn-primary">View details</a>
@@ -186,7 +186,7 @@ function AllCourses() {
                                                 <img className="card-img-top" alt="resuce" src={rescue} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Rescue Dive Course</h5>
-                                                    <p className="card-text">€300.00</p>
+                                                    <p className="card-text">€250.00</p>
                                                 </div>
                                                 <div className="card-footer">
                                                     <a href="/Rescue" className="btn btn-primary">View details</a>
@@ -262,7 +262,7 @@ function AllCourses() {
                                                 <img className="card-img-top" alt="advanced open water" src={advopenwater} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Advanced Open Water</h5>
-                                                    <p className="card-text">€350.00</p>
+                                                    <p className="card-text">€250.00</p>
                                                 </div>
                                                 <div className="card-footer">
                                                     <a href="/AdvOpenWater" className="btn btn-primary">View details</a>
@@ -275,7 +275,7 @@ function AllCourses() {
                                                 <img className="card-img-top" alt="rescue dive" src={rescue} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Rescue Dive</h5>
-                                                    <p className="card-text">€350.00</p>
+                                                    <p className="card-text">€250.00</p>
                                                 </div>
                                                 <div className="card-footer">
                                                     <a href="/Rescue" className="btn btn-primary">View details</a>

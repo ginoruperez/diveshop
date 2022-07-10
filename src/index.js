@@ -12,12 +12,12 @@ import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom'
 import Rescue from './components/Rescue';
 import AllCourses from './components/AllCourses';
-import Products from './components/Products';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import Order from './components/Order';
 import Testimonial from './components/Testimonial';
 import Faq from './components/Faq';
+import Shop from './components/Shop';
 
 
 
@@ -32,12 +32,12 @@ root.render(
       <Route path="AdvOpenWater" element={<AdvOpenWater />} />
       <Route path="Rescue" element={<Rescue />} />
       <Route path="AllCourses" element={<AllCourses />} />
-      <Route path="Products" element={<Products />} />
       <Route path="AboutUs" element={<AboutUs />} />
       <Route path="Contact" element={<Contact />} />
       <Route path="Order" element={<Order />} />
       <Route path="Testimonial" element={<Testimonial />} />
       <Route path="Faq" element={<Faq />} />
+      <Route path="Shop" element={<Shop />} />
 
 
     </Routes>
