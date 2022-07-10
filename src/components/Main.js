@@ -3,6 +3,7 @@ import dolphinsmall from './images/products/dolphin-small.jpg';
 import servicesadvancedopen from './images/products/services-advancedopen-small.jpg';
 import servicesopensmall from './images/products/services-discoverscuba.jpg';
 import dolphin3 from './images/dolphin3.png';
+import padi5star from './images/5star_IDC.jpg';
 
 
 function Main() {
@@ -50,15 +51,27 @@ function Main() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Dive Shop</a>
+                                    <a className="nav-link" href="/Shop">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="/">
-                                        Celtic subscription
+                                    <a className="nav-link " href="/AboutUs">About Us</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/Contact">Contact</a>
+                                </li>
+
+
+                                <li className="nav-item dropdown">
+
+                                    <a className="nav-link dropdown-toggle" href="/" id="nav-dropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false" >
+                                        Extras
                                     </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">Contact</a>
+
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+                                        <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
+                                        <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                                    </ul>
                                 </li>
 
                             </ul>
@@ -82,21 +95,20 @@ function Main() {
                     <div className="carousel-inner">
                         <div className="carousel-item welcome-carousel-image1 active">
                             <div className="carousel-caption">
-                                <h1>Welcome to Celtic Dive Shop</h1>
+                                <h1>Welcome to Celtic Sea Dive Shop</h1>
                                 <p>The best place for Underwater adventure.</p>
                             </div>
                         </div>
                         <div className="carousel-item welcome-carousel-image2">
                             <div className="carousel-caption text-start">
-                                <h1>Discover our Celtic Dive subscription</h1>
-                                <p>Sign up for our Monthly, Weekly or Yearly subscription.</p>
-                                <p><a className="btn btn-lg btn-primary" href="/" role="button">Sign up
-                                    today</a></p>
+                                <h1>High Quality Scuba Diving Products</h1>
+                                <p>Shop with our wide range of High Quality Products</p>
+                                <p><a className="btn btn-lg btn-primary" href="/Products" role="button">Dive Shop</a></p>
                             </div>
                         </div>
                         <div className="carousel-item welcome-carousel-image3">
                             <div className="carousel-caption text-end">
-                                <h1>Browse all Dive Adventure.</h1>
+                                <h1>Browse all our Dive Adventures.</h1>
                                 <p>Every season has its special activities. Enjoy our summer fun dive activities.</p>
                                 <p><a className="btn btn-lg btn-primary" href="/OpenWater" role="button">Open Water</a></p>
                             </div>
@@ -111,11 +123,7 @@ function Main() {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-                <nav aria-label="breadcrumb" className="my-3 ms-3">
-                    <ol className="breadcrumb">
-                        <li className="breadcrumb-item active" aria-current="page">Home</li>
-                    </ol>
-                </nav>
+                
                 <div className="container history">
                     <div className="row">
                         <div className="col-lg-8">
@@ -123,28 +131,24 @@ function Main() {
                                 Our Company
                             </h2>
                             <section>
-                                Gino Ruperez is the owner of Celtic Sea Dive Shop located in Kinsale, Southwest coast of Ireland
-                                near Celtic Sea. It has been in operation since 2015 in Ireland. The idea of forming a Dive Shop
-                                is one of dreams by owner who has greatly influenced and inspired by his spectacular experiences
-                                in doing underwater activities by his PADI professional diving instructors and diving friends
-                                who work from Jeddah Saudi Arabia as an expat for several years. Diving in the Red Sea is a fun
-                                filled recreational activities that helps them to alleviate the boredom and loneliness of being
-                                thousands of miles away from their family.
+                                Our Dive Shop is located in Kinsale, Southwest coast of Ireland near Celtic Sea. We stock a wide range of 
+                                Scubapro, Mares, Apeks and Aqualung dive equipment.  
+                                
+                                For convenience, customers may also order from our on line shop.
+                                We are PADI accredited servicing and our test centre is also located within our shop
+
+                                With exclusive deals in Malta and Gozo and other fantastic dive locations around Ireland, 
+                                we guarantee you the best diving all around.  
+                                
+                                With over 10 years of experience, we guarantee the highest standards of quality in 
+                                terms of teaching, safety, and services.
+
+                                All our equipment is renewed every 2 years, to guarantee your comfort and safety. 
+                                So start your PADI Adventure with us today, get diving and change your life. 
+                                Our team is here to assist you to step by step.
                             </section>
                             <br />
 
-                            <section>
-                                The owner got an interest in pursuing a goal of learning to dive in an open water of Red Sea in
-                                the south of Jeddah while he was working in Saudi as an expat. Fortunately, he met his
-                                professional PADI Irish instructor David John Walker and few diving buddies.
-                            </section>
-                            <br />
-                            <section>
-                                After immigrating to Ireland in 2015 and settled in Kinsale, he started to form a team of
-                                professional divers along with David John Walker as the lead instructor. Kinsale has some
-                                amazing dive locations and is the perfect place to learn to dive.
-                            </section>
-                            <br />
                             <section>
                                 The Celtic Sea Dive shop aims to provide training and education in a fun-filled safe environment
                                 to people from all walks of life.
@@ -167,9 +171,11 @@ function Main() {
                         <aside className="col-lg-4">
                             <div className="p-4 mb-3 mt-2 bg-light rounded">
                                 <h4>Thank You for Joining Us !</h4>
-                                <p className="mb-0 fst-italic">We are a proud 5 star PADI facility incorporating our own Dive Shop
+                                <p className="mb-0 fst-italic">We are a proud 5 star <a href="https://www.padi.com/">PADI</a> facility incorporating our own Dive Shop
                                     and Servicing
                                     Centre, we thrive on quality service, safety and of course a lot of fun!</p>
+
+                                <img className="card-img-top" src={padi5star} alt="padi 5 star" />
                             </div>
 
                         </aside>
@@ -190,7 +196,7 @@ function Main() {
                                     <p className="card-text">Feels Great to swim with our Dolphin!</p>
                                 </div>
                                 <div className="card-footer">
-                                    <a href="/" className="btn btn-primary">View details</a>
+                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
                                 </div>
                             </div>
                         </div>
@@ -213,7 +219,7 @@ function Main() {
                                 <img className="card-img-top" src={servicesadvancedopen} alt="services advanced open water" />
                                 <div className="card-body">
                                     <h5 className="card-title">Advanced Open Water</h5>
-                                    <p className="card-text">It was so fun!</p>
+                                    <p className="card-text">This is sooooo cool and exhilarating!</p>
                                 </div>
                                 <div className="card-footer">
                                     <a href="/AdvOpenWater" className="btn btn-primary">View details</a>
@@ -245,10 +251,10 @@ function Main() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
                             </div>
 
 
@@ -257,7 +263,9 @@ function Main() {
                                     <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
                                 </li>
                                 <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">info@celticdiveshop.com</span>
+                                
+                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
+                                    <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
                                 </li>
                                 <li className="mb-3">
                                     <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>

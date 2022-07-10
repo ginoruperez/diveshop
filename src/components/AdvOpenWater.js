@@ -1,6 +1,6 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-import advancedopen from './images/products/services-advancedopen.jpg';
+import openwatersmall from './images/products/services-advancedopen-small.jpg';
 import mermaid from './images/products/mermaid-small.jpg';
 import homedolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
@@ -50,15 +50,25 @@ function AdvOpenWater() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Dive Shop</a>
+                                    <a className="nav-link" href="/Shop">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="/">
-                                        Celtic subscription
+                                    <a className="nav-link " href="/AboutUs">About Us</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="/Contact">Contact</a>
+                                </li>
+                                <li className="nav-item dropdown">
+
+                                    <a className="nav-link dropdown-toggle" href="/" id="nav-dropdown" data-bs-toggle="dropdown"
+                                        aria-expanded="false" >
+                                        Extras
                                     </a>
-                                </li>
-                                <li className="nav-item">
-                                    <a className="nav-link" href="/">Contact</a>
+
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+                                        <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
+                                        <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                                    </ul>
                                 </li>
                             </ul>
                         </div>
@@ -81,7 +91,12 @@ function AdvOpenWater() {
 
                     <div className="row ">
                         <div className="col-6 col-lg-8">
-                            <img src={advancedopen} className="img-fluid rounded-1" alt="advanced open water" />
+                            {/* <img src={advancedopen} className="img-fluid rounded-1" alt="advanced open water" /> */}
+
+                            <div className="container-openwater">
+                                <iframe className="responsive-iframe" src="https://www.youtube.com/embed/tWPGi52nkHg?autoplay=1&mute=1"
+                                    title="YouTube video player"></iframe>
+                            </div>
                         </div>
 
                         <div className="col-6 col-lg-4">
@@ -100,9 +115,11 @@ function AdvOpenWater() {
                             <h3>This course includes the following :</h3>
                             <ul>
                                 <li>PADI Advanced Open Water booklet</li>
+                                <li>Access to PADI eLearning course</li>
                                 <li>15 Hours Classroom Sessions</li>
-                                <li>15 Hours Pool Training</li>
-                                <li>5 Ocean Dives</li>
+                                <li>5 Ocean Dives including night Dives</li>
+                                <li>PADI Advanced Open water Exam</li>
+
                             </ul>
                             <p className="user-select-none">All equipment will be provided for
                                 the length of the course.</p>
@@ -110,20 +127,21 @@ function AdvOpenWater() {
                             <div className="row">
 
                                 <div className="col-md-4">
-                                    <strong>$250.00</strong>
+                                    <strong>€ 250.00</strong>
                                 </div>
                                 <div className="col-md-8">
-                                    <a type="button" href="shoppingbasket.html" className="btn btn-success float-end"
-                                        data-bs-toggle="offcanvas" data-bs-target="a.html" aria-controls="shoppingCart">
-                                        Add to cart
+                                    <a type="button" href="/Order" className="btn btn-success float-end"
+                                        data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
+                                        Order
                                     </a>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                        <h4>A quote from Celtic Diving Team</h4>
-                        <p className="mb-0 fst-italic"> We dive not to escape life, but for life not to escape us.
+                        <h4>Quote from Edmund Hillary...</h4>
+                        <p className="mb-0 fst-italic"> It’s not the depths we conquer, but ourselves.
+
                         </p>
                     </div>
 
@@ -131,28 +149,28 @@ function AdvOpenWater() {
 
                     <div className="row">
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={homedolphin} alt="" />
                             </a>
                             <p>Close encouter with Dolphin</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={mermaid} alt="" />
                             </a>
                             <p>Discover Mermaid</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={photography} alt="" />
                             </a>
                             <p>Underwater Photography</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/">
+                            <a href="/AllCourses">
                                 <img className="img-fluid" src={boatdiver} alt="" />
                             </a>
                             <p>Boat Diving</p>
@@ -163,6 +181,101 @@ function AdvOpenWater() {
                 </div>
 
             </main>
+            {/* order page */}
+
+            <div className="offcanvas offcanvas-start shopping-cart-offcanvas" data-bs-scroll="true" tabindex="-1"
+                id="shoppingCart" aria-labelledby="shoppingCartLabel">
+
+                <div className="offcanvas-header">
+                    <h5 className="offcanvas-title" id="shoppingCartLabel">Your ordered course</h5>
+                    <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+
+                <div className="offcanvas-body">
+                    <div className="table-responsive">
+                        <table className="table table-hover">
+                            <thead>
+                                <tr>
+                                    <th>Course Name</th>
+                                    <th>Quantity</th>
+                                    <th className="text-center">Price</th>
+                                    <th className="text-center">Total</th>
+                                    <th> </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td className="col-sm-8 col-md-6">
+                                        <div className="media">
+                                            <img className="mr-3 thumbnail img-fluid" width="75"
+                                                src={openwatersmall} alt="open water" />
+                                            <div className="media-body">
+                                                <h5 className="mt-0 media-heading text-primary">Advanced Open Water</h5>
+                                                <span>Status: </span><span className="text-success"><strong>Available</strong></span>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td className="col-sm-1 col-md-1" >
+                                        <input type="number" className="form-control" min="1" max="100" value="1"/>
+                                    </td>
+                                    <td className="col-sm-1 col-md-1 text-center"><strong>€250.00</strong></td>
+                                    <td className="col-sm-1 col-md-1 text-center"><strong>€250.00</strong></td>
+                                    <td className="col-sm-1 col-md-1">
+                                        <button type="button" className="btn btn-danger">
+                                            X
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" className="text-right">
+                                        <h5>Subtotal</h5>
+                                    </td>
+                                    <td className="text-center">
+                                        <h5><strong>€250.00</strong></h5>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" className="text-right">
+                                        <h5>Tax</h5>
+                                    </td>
+                                    <td className="text-center">
+                                        <h5><strong>€25.00</strong></h5>
+                                    </td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" className="text-right">
+                                        <h3>Total</h3>
+                                    </td>
+                                    <td className="text-center">
+                                        <h3><strong>€275.00</strong></h3>
+                                    </td>
+                                    <td></td>
+
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <form className="m-1">
+                        <div className="input-group">
+                            <input type="text" className="form-control" placeholder="Promo code" />
+                            <div className="input-group-append">
+                                <button type="button" className="btn btn-secondary">Redeem</button>
+                            </div>
+                        </div>
+                    </form>
+                    <a type="button" href="/Order" className="m-1 btn btn-success">
+                        Go to order payment
+                    </a>
+
+                </div>
+            </div>
+
+            {/*End of static order page*/}
 
             <footer className="main-footer text-white text-center text-lg-start bg-primary">
 
@@ -181,10 +294,10 @@ function AdvOpenWater() {
 
 
                             <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="/"><i className="fab fa-google-plus-g"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
+                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
                             </div>
 
 
@@ -193,7 +306,8 @@ function AdvOpenWater() {
                                     <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
                                 </li>
                                 <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">info@celticdiveshop.com</span>
+                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
+                                        <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
                                 </li>
                                 <li className="mb-3">
                                     <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>

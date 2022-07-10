@@ -38,19 +38,21 @@ body {
 
   .welcome-carousel-image2{
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-    background-image:url('./components/images/carousel2.jpg');
+    background-image:url('./components/images/products/services-discoverscuba.jpg');
 
   }
 
   .welcome-carousel-image3{
     box-shadow: inset 0 0 0 100vw rgba(0,0,0,0.3);
-    background-image:url('./components/images/carousel3.jpg');
+    background-image:url('./components/images/products/services-advancedopen.jpg');
   }
 
   /* Shopping cart offcanvas */
-.shopping-cart-offcanvas {
-  width: 500px;
-}
+
+  #shoppingCart {
+    width: 500px;
+  }
+  
 
 /* Jumbotron */
 
@@ -66,14 +68,26 @@ body {
   background: url('./components/images/openwater-background.jpg') no-repeat fixed;
 }
 
+
 .jumbotron-detail-allcourses {
   background: url('./components/images/openwater-background.jpg') no-repeat fixed;  
 }
 
-.jumbotron-other {
-  background: url('./components/images/products/about-diveteam.jpg') no-repeat fixed;
+.jumbotron-team {
+  background: url('./components/images/openwater-background.jpg') no-repeat fixed;
 }
 
+.jumbotron-contact {
+  background: url('./components/images/products/services-advancedopen.jpg') no-repeat fixed;
+}
+
+.jumbotron-shop {
+  background: url('./components/images/products/dive-photography1.jpg') no-repeat fixed;
+}
+
+.jumbotron-testimonial {
+  background: url('./components/images/products/services-scubaupdate.jpg') no-repeat fixed;
+}
 
 
 
@@ -125,6 +139,10 @@ footer a:hover { text-decoration: underline; }
     }
 
 
+.footer-shop{
+  float: left;
+  width: 100%;
+}
 
 
 .social {
@@ -147,6 +165,9 @@ footer a:hover { text-decoration: underline; }
     
 }
 
+.fa-ul a:link{
+  color: white;
+}
 
 .copyright {
 float: left;
@@ -156,6 +177,65 @@ height: 50px;
 padding-top: 100px;
 background: #043b83;
 color: white;
+}
+
+
+
+iframe.services-open-water {
+	width: 850px;
+	height: 500px;
+
+}
+
+.container-openwater {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 56.25% 16:9 Aspect Ratio */
+  
+}
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* MAP */
+
+.map-container{
+  overflow:hidden;
+  padding-bottom:56.25%;
+  position:relative;
+  height:0;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+.map-container iframe{
+  left:0;
+  top:0;
+  height:100%;
+  width:100%;
+  position:absolute;
+}
+
+
+
+/*Products - Shop */
+
+.card-product {
+  height: 700px;
+  width: 350px;
+  float: left;  
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: -150px;
+  padding-bottom: 20px;
 }
 
 
