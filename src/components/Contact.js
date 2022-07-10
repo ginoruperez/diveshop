@@ -1,10 +1,5 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-import discoverscuba from './images/products/services-discoverscuba.jpg';
-import mermaid from './images/products/mermaid-small.jpg';
-import homedolphin from './images/products/home-dolphin-small.jpg';
-import photography from './images/products/dive-photography.jpg';
-import boatdiver from './images/products/boatdiver.jpg';
 import dolphin3 from './images/dolphin3.png';
 import './js/form-validation'
 

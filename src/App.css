@@ -219,3 +219,19 @@ iframe.services-open-water {
   width:100%;
   position:absolute;
 }
+
+
+
+/*Products - Shop */
+
+.card-product {
+  height: 700px;
+  width: 350px;
+  float: left;  
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: -150px;
+  padding-bottom: 20px;
+}
+
+

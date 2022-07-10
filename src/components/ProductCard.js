@@ -1,76 +1,17 @@
-import React, { useState } from 'react'
-
-
-import openwatersmall from './images/products/services-openwater-small.jpg';
-import advancedopensmall from './images/products/services-advancedopen-small.jpg';
-
+import React from 'react'
 
 
 export default function ProductCard({ product }) {
-
-  const [active, setActive] = useState(true);
 
   return (
 
 
     <div>
 
-      {/*}
-      <Card elevation={2}>
-        <CardHeader
-          action={
-            <IconButton onClick={e => {
-              console.log("add to fav", product.id)
-              setActive(!active);
-
-
-            }}
-
-            >
-              {active ? <FavoriteBorderSharpIcon /> : <FavoriteIcon color="secondary" />}
-
-            </IconButton>
-          }
-          title={product.title}
-          subheader={product.type}
-
-
-        />
-        <CardMedia
-          component="img"
-          height="300"
-          width="300"
-          image={product.filename}
-          alt={product.rating}
-        />
-        <CardContent>
-          <Typography variant="body2" color="text.secondary">
-            {product.description}
-
-          </Typography>
-
-          <Typography variant="body2" color="text.primary">
-            € {product.price}
-
-          </Typography>
-
-        </CardContent>
-        <CardActions sx={{
-          display: "flex",
-          justifyContent: "space-between"
-        }}>
-          <IconButton onClick={() => window.location.replace("/Order")}>
-            <ShoppingCartIcon color="secondary" />
-          </IconButton>
-
-        </CardActions>
-
-      </Card>
-      */}
-
       <div className="row">
         <div className="col-sm">
           <div className="card">
+          
             <h6 className="card-title">{product.title}</h6>
             <img className="card-img-top" alt="discover scuba" src={product.filename} />
             <div className="card-body">
@@ -78,8 +19,10 @@ export default function ProductCard({ product }) {
               <p className="card-text">€ {product.price}</p>
             </div>
             <div className="card-footer">
+            
               <a type="button" href="/Order" className="btn btn-success float-end"
                 data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
+                
                 Order
               </a>
 
@@ -123,7 +66,7 @@ export default function ProductCard({ product }) {
                       </div>
                     </td>
                     <td className="col-sm-1 col-md-1" >
-                      <input type="number" className="form-control" min="1" max="100" />
+                      <input type="number" className="form-control" min="1" max="100"  />
                     </td>
                     <td className="col-sm-1 col-md-1 text-center"><strong>€{product.price} </strong></td>
                     <td className="col-sm-1 col-md-1 text-center"><strong>€{product.price} </strong></td>
@@ -156,7 +99,7 @@ export default function ProductCard({ product }) {
                       <h3>Total</h3>
                     </td>
                     <td className="text-center">
-                      <h3><strong>€{product.price+10}</strong></h3>
+                      <h3><strong>€{product.price + 10}</strong></h3>
                     </td>
                     <td></td>
 

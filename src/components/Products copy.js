@@ -131,7 +131,6 @@ export default function Products() {
               Products Page
 
             </Typography>
-
             <LinearProgress variant="determinate" value={progress} color="secondary" />
 
             <Typography color="error" align="center" sx={{ mt: 4 }}>
@@ -142,9 +141,6 @@ export default function Products() {
 
 
         </Grid>
-
-        {/*
-
         <Grid container spacing={2}>
           {products &&
             products.map(product => (
@@ -156,25 +152,6 @@ export default function Products() {
             ))
           }
         </Grid>
-        */}
-
-        <div className="row">
-          <h2>Products Page</h2>
-          <div className="col-sm">
-            {products &&
-              products.map(product => (
-
-
-                <div className="card-product"  key={product.id}>
-                  <ProductCard product={product} />                  
-                </div>
-                
-
-              ))
-            }
-
-          </div>
-        </div>
 
       </Container>
       <br></br>

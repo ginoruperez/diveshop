@@ -3,11 +3,6 @@ import dolphinico from './images/dolphin.ico';
 import dolphin3 from './images/dolphin3.png';
 import aboutdiveteam from './images/products/about-diveteam.jpg';
 
-
-import dolphinsmall from './images/products/dolphin-small.jpg';
-import servicesadvancedopen from './images/products/services-advancedopen-small.jpg';
-import servicesopensmall from './images/products/services-discoverscuba.jpg';
-
 import divergino from './images/diver-gino1.jpg';
 import diverjohn from './images/diver-john.jpg';
 import diverfiona from './images/diver-fiona.jpg';
