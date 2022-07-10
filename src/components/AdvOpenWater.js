@@ -1,6 +1,6 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-import openwatersmall from './images/products/services-openwater-small.jpg';
+import openwatersmall from './images/products/services-advancedopen-small.jpg';
 import mermaid from './images/products/mermaid-small.jpg';
 import homedolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
