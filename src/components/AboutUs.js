@@ -2,7 +2,6 @@ import React from 'react';
 import dolphinico from './images/dolphin.ico';
 import dolphin3 from './images/dolphin3.png';
 import aboutdiveteam from './images/products/about-diveteam.jpg';
-
 import divergino from './images/diver-gino1.jpg';
 import diverjohn from './images/diver-john.jpg';
 import diverfiona from './images/diver-fiona.jpg';
@@ -97,14 +96,11 @@ function AboutUs() {
 
                             <img src={aboutdiveteam} className="img-fluid rounded-1" alt="test" />
 
-
                         </div>
-
-
 
                         <div className="col-6 col-lg-12">
                             <h3 className="my-3">About Us!</h3>
-                            { /* <p className="lead text-center">Join the exciting adveture of our Open Water Course!</p> */}
+                            
                             <p className="user-select-none">
                                 <section>
                                     Gino Ruperez is the owner of Celtic Sea Dive Shop located in Kinsale, Southwest coast of Ireland
@@ -163,7 +159,7 @@ function AboutUs() {
 
                             <div className="col">
                                 <div className="card rounded mb-4 shadow-sm">
-                                    <img className="card-img-top" src={diverjohn} alt="dolphinsmall" />
+                                    <img className="card-img-top" src={diverjohn} alt="diver" />
                                     <div className="card-body">
                                         <h5 className="card-title">David John Walker</h5>
                                         <p className="card-text"><strong> <em>Certified PADI Instructor</em> </strong> He is qualified to teach a wide range of
@@ -197,7 +193,7 @@ function AboutUs() {
 
                             <div className="col">
                                 <div className="card rounded mb-4 shadow-sm">
-                                    <img className="card-img-top" src={diverfiona} alt="services advanced open water" />
+                                    <img className="card-img-top" src={diverfiona} alt="diver" />
                                     <div className="card-body">
                                         <h5 className="card-title">Fiona Madrigal</h5>
                                         <p className="card-text">joined in 2017 and qualified as Dive Master

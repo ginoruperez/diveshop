@@ -36,7 +36,7 @@ function Testimonial() {
                                     </a>
 
                                     <ul className="dropdown-menu " aria-labelledby="nav-dropdown">
-                                        <li><a className="dropdown-item active" href="/OpenWater">Open Water</a></li>
+                                        <li><a className="dropdown-item" href="/OpenWater">Open Water</a></li>
                                         <li><a className="dropdown-item" href="/AdvOpenWater">Advanced Open Water</a></li>
                                         <li><a className="dropdown-item" href="/Rescue">Rescue Diving</a></li>
                                         <li>

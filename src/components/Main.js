@@ -103,7 +103,7 @@ function Main() {
                             <div className="carousel-caption text-start">
                                 <h1>High Quality Scuba Diving Products</h1>
                                 <p>Shop with our wide range of High Quality Products</p>
-                                <p><a className="btn btn-lg btn-primary" href="/Products" role="button">Dive Shop</a></p>
+                                <p><a className="btn btn-lg btn-primary" href="/Shop" role="button">Dive Shop</a></p>
                             </div>
                         </div>
                         <div className="carousel-item welcome-carousel-image3">

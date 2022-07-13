@@ -7,7 +7,6 @@ import AdvOpenWater from './components/AdvOpenWater';
 import reportWebVitals from './reportWebVitals';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
-
 import { BrowserRouter } from 'react-router-dom';
 import { Routes, Route } from 'react-router-dom'
 import Rescue from './components/Rescue';
@@ -27,7 +26,6 @@ root.render(
     <Routes>
 
       <Route path="/" element={<App />} />
-
       <Route path="OpenWater" element={<OpenWater />} />
       <Route path="AdvOpenWater" element={<AdvOpenWater />} />
       <Route path="Rescue" element={<Rescue />} />

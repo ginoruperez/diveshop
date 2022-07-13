@@ -82,9 +82,6 @@ function Contact() {
                     </div>
                 </div>
 
-
-
-
                 <div className="container">
 
                     <h1 className="fw-bolder">Contact Us

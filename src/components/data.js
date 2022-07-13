@@ -71,7 +71,7 @@ const data = {
         type: "Towels",
         name: "Microfiber bathrobe",
         image: "https://assets.mareshop.eu/media/catalog/product/cache/23/image/600x600/9df78eab33525d08d6e5fb8d27136e95/a/q/aquasphere-waterwayroyal_1.jpg",        
-        "price": 19.49,
+        price: 19.49,
         
       },
       {
@@ -84,20 +84,20 @@ const data = {
         
       },
       { 
-        "id" : 11,
-        "title": "Dive Gloves",
-        "type": "Gloves",
+        id : 11,
+        title: "Dive Gloves",
+        type: "Gloves",
         name: "Aqualung Gloves, Admiral Wmn's",
         image: "https://usfiles.evediving.com/store/5415/StoreFiles/ProductImages/Aqualung/Gloves/500x500/admiral%20purp4.jpg",
-        "price": 25.62,
+        price: 25.62,
       },
       {
-        "id" : 12,
-        "title": "Dive Knives",
-        "type": "Knife",
+        id : 12,
+        title: "Dive Knives",
+        type: "Knife",
         name: "Innovative Scuba Knife w/Line Cutter",            
         image: "https://usfiles.evediving.com/store/5415/StoreFiles/ProductImages/Innovative%20Scuba/Knives/500x500/gumgna_1200_900.jpg",
-        "price": 18.18,
+        price: 18.18,
       },      
     ],
   };

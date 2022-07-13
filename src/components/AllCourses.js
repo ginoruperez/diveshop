@@ -1,18 +1,14 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-
 import discoverscuba from './images/products/services-discoverscuba.jpg';
 import mermaid from './images/products/mermaid-small.jpg';
 import snorkel from './images/products/services-snorkeling.jpg';
 import openwater from './images/products/services-openwater.jpg';
-
 import advopenwater from './images/products/services-advancedopen.jpg';
 import rescue from './images/products/services-rescue.jpg';
-
 import dolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
 import boatdiver from './images/products/boatdiver.jpg';
-
 import dolphin3 from './images/dolphin3.png';
 
 
@@ -65,7 +61,7 @@ function AllCourses() {
                                     <a className="nav-link " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/">Contact</a>
+                                    <a className="nav-link" href="/Contact">Contact</a>
                                 </li>
                                 <li className="nav-item dropdown">
 

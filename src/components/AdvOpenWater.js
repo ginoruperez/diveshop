@@ -90,8 +90,7 @@ function AdvOpenWater() {
                     </h1>
 
                     <div className="row ">
-                        <div className="col-6 col-lg-8">
-                            {/* <img src={advancedopen} className="img-fluid rounded-1" alt="advanced open water" /> */}
+                        <div className="col-6 col-lg-8">                            
 
                             <div className="container-openwater">
                                 <iframe className="responsive-iframe" src="https://www.youtube.com/embed/tWPGi52nkHg?autoplay=1&mute=1"
@@ -150,28 +149,28 @@ function AdvOpenWater() {
                     <div className="row">
                         <div className="col-md-3 col-sm-6 mb-3">
                             <a href="/AllCourses">
-                                <img className="img-fluid" src={homedolphin} alt="" />
+                                <img className="img-fluid" src={homedolphin} alt="dolphin" />
                             </a>
                             <p>Close encouter with Dolphin</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
                             <a href="/AllCourses">
-                                <img className="img-fluid" src={mermaid} alt="" />
+                                <img className="img-fluid" src={mermaid} alt="mermaid" />
                             </a>
                             <p>Discover Mermaid</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
                             <a href="/AllCourses">
-                                <img className="img-fluid" src={photography} alt="" />
+                                <img className="img-fluid" src={photography} alt="photography" />
                             </a>
                             <p>Underwater Photography</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">
                             <a href="/AllCourses">
-                                <img className="img-fluid" src={boatdiver} alt="" />
+                                <img className="img-fluid" src={boatdiver} alt="boat dive" />
                             </a>
                             <p>Boat Diving</p>
 
