@@ -1,41 +1,15 @@
 import Header from './Header';
 import ShopMain from './ShopMain';
 import Basket from './Basket';
-import { data } from './data';
+import data from './data';
 
-import React, { useState, useEffect } from 'react';
+import React, {useState } from 'react';
 
 import dolphin3 from './images/dolphin3.png';
 import dolphinico from './images/dolphin.ico';
 
-
 function Shop() {
-
-  const [products, setProducts] = React.useState(data);
-  console.log(products);
-
-  const removeItem = async (id) => {
-
-    const confirmBox = window.confirm(
-      "Do you really want to delete the item?"
-    )
-
-    if (confirmBox === true) {
-      let newProducts = products.filter((item) => item.id !== id);
-      console.log(newProducts);
-      setProducts(newProducts);
-
-    }
-
-
-
-
-
-
-  };
-
-
-
+  const { products } = data; 
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
     const exist = cartItems.find((x) => x.id === product.id);
@@ -61,7 +35,7 @@ function Shop() {
       );
     }
   };
-
+  
 
   return (
     <div>
@@ -135,12 +109,12 @@ function Shop() {
           </div>
         </nav>
       </header>
-
+      
       {/*Shopping Cart */}
-
+      
       <Header countCartItems={cartItems.length}></Header>
       <div className="container">
-        <ShopMain products={products} onAdd={onAdd} removeItem={removeItem}></ShopMain>
+        <ShopMain products={products} onAdd={onAdd}></ShopMain>
         <Basket
           cartItems={cartItems}
           onAdd={onAdd}

@@ -4,6 +4,7 @@ import servicesadvancedopen from './images/products/services-advancedopen-small.
 import servicesopensmall from './images/products/services-discoverscuba.jpg';
 import dolphin3 from './images/dolphin3.png';
 import padi5star from './images/5star_IDC.jpg';
+import profilepic from './images/profile-pic.jpg';
 
 
 function Main() {
@@ -78,6 +79,29 @@ function Main() {
 
                         </div>
                     </div>
+
+{/*
+                    <div class="profile flex align-center">
+                        <div class="profile-pic"><img alt="John Doe" src={profilepic} /></div>
+    </div> */}
+
+                    <li className="nav-item dropdown">
+
+                        <div className="profile-pic dropdown-toggle"  data-bs-toggle="dropdown"
+                            > <img alt="John Doe" src={profilepic} />                            
+                        </div>
+
+                        <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+                            <li><a className="dropdown-item" href="/OpenWater">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/AdvOpenWater">Sign-Up</a></li>
+                            <li><a className="dropdown-item" href="/Rescue">Profile</a></li>
+                            <li>
+                                <hr className="dropdown-divider" />
+                            </li>
+                            <li><a className="dropdown-item" href="/AllCourses">Logout</a></li>
+                        </ul>
+                    </li>
+
                 </nav>
 
             </header>
@@ -123,7 +147,7 @@ function Main() {
                         <span className="visually-hidden">Next</span>
                     </button>
                 </div>
-                
+
                 <div className="container history">
                     <div className="row">
                         <div className="col-lg-8">
@@ -131,20 +155,20 @@ function Main() {
                                 Our Company
                             </h2>
                             <section>
-                                Our Dive Shop is located in Kinsale, Southwest coast of Ireland near Celtic Sea. We stock a wide range of 
-                                Scubapro, Mares, Apeks and Aqualung dive equipment.  
-                                
+                                Our Dive Shop is located in Kinsale, Southwest coast of Ireland near Celtic Sea. We stock a wide range of
+                                Scubapro, Mares, Apeks and Aqualung dive equipment.
+
                                 For convenience, customers may also order from our on line shop.
                                 We are PADI accredited servicing and our test centre is also located within our shop
 
-                                With exclusive deals in Malta and Gozo and other fantastic dive locations around Ireland, 
-                                we guarantee you the best diving all around.  
-                                
-                                With over 10 years of experience, we guarantee the highest standards of quality in 
+                                With exclusive deals in Malta and Gozo and other fantastic dive locations around Ireland,
+                                we guarantee you the best diving all around.
+
+                                With over 10 years of experience, we guarantee the highest standards of quality in
                                 terms of teaching, safety, and services.
 
-                                All our equipment is renewed every 2 years, to guarantee your comfort and safety. 
-                                So start your PADI Adventure with us today, get diving and change your life. 
+                                All our equipment is renewed every 2 years, to guarantee your comfort and safety.
+                                So start your PADI Adventure with us today, get diving and change your life.
                                 Our team is here to assist you to step by step.
                             </section>
                             <br />
@@ -263,9 +287,9 @@ function Main() {
                                     <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
                                 </li>
                                 <li className="mb-3">
-                                
+
                                     <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
-                                    <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
+                                        <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
                                 </li>
                                 <li className="mb-3">
                                     <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>

@@ -3,10 +3,11 @@ import ShopMain from './ShopMain';
 import Basket from './Basket';
 import { data } from './data';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import dolphin3 from './images/dolphin3.png';
 import dolphinico from './images/dolphin.ico';
+import { confirm } from "react-confirm-box";
 
 
 function Shop() {
@@ -14,25 +15,17 @@ function Shop() {
   const [products, setProducts] = React.useState(data);
   console.log(products);
 
-  const removeItem = async (id) => {
+  const removeItem = (id) => {
 
-    const confirmBox = window.confirm(
-      "Do you really want to delete the item?"
-    )
+    let newProducts = products.filter((item) => item.id !== id);
 
-    if (confirmBox === true) {
-      let newProducts = products.filter((item) => item.id !== id);
-      console.log(newProducts);
-      setProducts(newProducts);
+    console.log(newProducts);
+    setProducts(newProducts);
 
-    }
-
-
-
-
-
+    
 
   };
+
 
 
 
@@ -66,6 +59,11 @@ function Shop() {
   return (
     <div>
 
+
+
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap3-dialog/1.34.7/css/bootstrap-dialog.min.css" />
 
       <header>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />

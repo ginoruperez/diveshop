@@ -16,8 +16,6 @@ function ShopMain(props) {
                     </div>
                 ))}
             </div>
-
-            
         </div >
     );
 }
