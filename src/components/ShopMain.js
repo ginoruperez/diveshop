@@ -4,6 +4,9 @@ import Product from './Product';
 
 
 function ShopMain(props) {
+
+
+
     const { products, onAdd, removeItem } = props; 
     return (
         <div>

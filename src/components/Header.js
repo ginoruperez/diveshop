@@ -4,7 +4,7 @@ export default function Header(props) {
     return (
         <div>
              
-             
+            {/*
             <header>
                 <div>
                     <div className="container-fluid jumbotron jumbotron-shop py-5">
@@ -14,7 +14,8 @@ export default function Header(props) {
                     </div>
 
                 </div>
-            </header>
+    </header> */}
+
             <div className="container">
                 <div>
                     <h1 className="fw-bolder text-center" > Dive Shop

@@ -3,7 +3,7 @@ import ShopMain from './ShopMain';
 import Basket from './Basket';
 import { data } from './data';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import dolphin3 from './images/dolphin3.png';
 import dolphinico from './images/dolphin.ico';
@@ -14,25 +14,18 @@ function Shop() {
   const [products, setProducts] = React.useState(data);
   console.log(products);
 
-  const removeItem = async (id) => {
+  const removeItem = (id) => {
 
-    const confirmBox = window.confirm(
-      "Do you really want to delete the item?"
-    )
+    let newProducts = products.filter((item) => item.id !== id);
 
-    if (confirmBox === true) {
-      let newProducts = products.filter((item) => item.id !== id);
-      console.log(newProducts);
-      setProducts(newProducts);
+    console.log(newProducts);
+    setProducts(newProducts);
 
-    }
-
-
-
-
-
+    
 
   };
+
+
 
 
 
@@ -140,6 +133,7 @@ function Shop() {
 
       <Header countCartItems={cartItems.length}></Header>
       <div className="container">
+  
         <ShopMain products={products} onAdd={onAdd} removeItem={removeItem}></ShopMain>
         <Basket
           cartItems={cartItems}
