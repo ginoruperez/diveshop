@@ -16,9 +16,9 @@ import Contact from './components/Contact';
 import Order from './components/Order';
 import Testimonial from './components/Testimonial';
 import Faq from './components/Faq';
-import Shop from './components/Shop';
 import Products from './components/Products';
 import CreateProduct from './components/CreateProduct';
+import SignIn from './components/SignIn';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -36,9 +36,9 @@ root.render(
       <Route path="Order" element={<Order />} />
       <Route path="Testimonial" element={<Testimonial />} />
       <Route path="Faq" element={<Faq />} />
-      <Route path="Shop" element={<Shop />} />
       <Route path="Products" element={<Products />} />
       <Route path="CreateProduct" element={<CreateProduct />} />
+      <Route path="SignIn" element={<SignIn />} />
 
 
     </Routes>

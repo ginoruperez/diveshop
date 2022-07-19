@@ -81,7 +81,7 @@ function AllCourses() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/Shop">Shop</a>
+                                    <a className="nav-link" href="/Products">Shop</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link " href="/AboutUs">About Us</a>

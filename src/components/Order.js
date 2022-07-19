@@ -46,7 +46,7 @@ function Order() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link active" href="/Shop">Shop</a>
+                                    <a className="nav-link active" href="/Products">Shop</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link " href="/AboutUs">About Us</a>

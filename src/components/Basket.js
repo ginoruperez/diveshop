@@ -8,7 +8,7 @@ export default function Basket(props) {
   const shippingPrice = itemsPrice > 2000 ? 0 : 20;
   const totalPrice = itemsPrice + taxPrice + shippingPrice;
   return (
-    <div className="offcanvas offcanvas-start shopping-cart-offcanvas" data-bs-scroll="true" tabindex="-1"
+    <div className="offcanvas offcanvas-start shopping-cart-offcanvas" data-bs-scroll="true" tabIndex="-1"
     id="shoppingCart" aria-labelledby="shoppingCartLabel">
 
       <h2>Cart Items</h2>

@@ -76,15 +76,6 @@ export default function Products() {
 
   }
 
-  const navigateTo = useNavigate();
-
-  const handleCreate = (e) => {
-    console.log('TEST ONLY CREATE');
-    navigateTo('/CreateProduct');
-  }
-
-
-
 
 
   const [cartItems, setCartItems] = useState([]);
@@ -204,7 +195,7 @@ export default function Products() {
 
         {/* <LinearProgress variant="determinate" value={progress} color="secondary" /> */}
 
-        <div className="progress" style={{ "height": "1px;" }}>
+        <div className="progress" style={{ "height": "5px" }}>
           <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ "width": String(progress) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
 

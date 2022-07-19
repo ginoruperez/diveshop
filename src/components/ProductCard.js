@@ -35,8 +35,8 @@ export default function ProductCard({ product, onAdd, handleDelete}) {
                 data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
                 Add to Cart
               </a>
-              <button className="btn" onClick={() => handleDelete(id)} ><i class="fa fa-trash"></i></button>
-              <button className="btn" onClick={() => handleCreate()}><i class="fa fa-plus"></i></button>
+              <button className="btn" onClick={() => handleDelete(id)} ><i className="fa fa-trash"></i></button>
+              <button className="btn" onClick={() => handleCreate()}><i className="fa fa-plus"></i></button>
             </div>
           </div>
         </div>

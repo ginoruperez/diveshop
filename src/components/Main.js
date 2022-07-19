@@ -7,7 +7,9 @@ import padi5star from './images/5star_IDC.jpg';
 import profilepic from './images/profile-pic.jpg';
 
 
+
 function Main() {
+
 
     return (
         <div>
@@ -80,27 +82,26 @@ function Main() {
                         </div>
                     </div>
 
-{/*
-                    <div class="profile flex align-center">
-                        <div class="profile-pic"><img alt="John Doe" src={profilepic} /></div>
-    </div> */}
+                    <div className="nav-item dropdown" style={{ "width": "170px" }} >
 
-                    <li className="nav-item dropdown">
-
-                        <div className="profile-pic dropdown-toggle"  data-bs-toggle="dropdown"
-                            > <img alt="John Doe" src={profilepic} />                            
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
+                        > <img alt="John Doe" src={profilepic} />
                         </div>
 
-                        <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
-                            <li><a className="dropdown-item" href="/OpenWater">Sign-In</a></li>
-                            <li><a className="dropdown-item" href="/AdvOpenWater">Sign-Up</a></li>
-                            <li><a className="dropdown-item" href="/Rescue">Profile</a></li>
+                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
+                            <li><a className="dropdown-item" href="/SignIn">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/Contact">Sign-Up</a></li>
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
-                            <li><a className="dropdown-item" href="/AllCourses">Logout</a></li>
+                            <li><a className="dropdown-item" href="/">Logout</a></li>
                         </ul>
-                    </li>
+
+                    </div>
+
+                
+
+
 
                 </nav>
 
@@ -127,7 +128,7 @@ function Main() {
                             <div className="carousel-caption text-start">
                                 <h1>High Quality Scuba Diving Products</h1>
                                 <p>Shop with our wide range of High Quality Products</p>
-                                <p><a className="btn btn-lg btn-primary" href="/Shop" role="button">Dive Shop</a></p>
+                                <p><a className="btn btn-lg btn-primary" href="/Products" role="button">Dive Shop</a></p>
                             </div>
                         </div>
                         <div className="carousel-item welcome-carousel-image3">
