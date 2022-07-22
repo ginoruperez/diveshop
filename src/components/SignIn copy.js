@@ -1,17 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react'
+import { createTheme, ThemeProvider } from '@mui/material/styles'
+import { Avatar, Container, CssBaseline, Box, Typography, TextField, Grid, FormControlLabel, Checkbox, Button } from '@mui/material';
+import { Link } from "react-router-dom"
+
 import dolphinico from './images/dolphin.ico';
-import mermaid from './images/products/mermaid-small.jpg';
-import homedolphin from './images/products/home-dolphin-small.jpg';
-import photography from './images/products/dive-photography.jpg';
-import boatdiver from './images/products/boatdiver.jpg';
 import dolphin3 from './images/dolphin3.png';
 
+async function loginUser(credentials) {
+    return fetch('http://localhost:8080/login', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(credentials)
+    })
+        .then(data => data.json())
+}
 
 
-function OpenWater() {
+
+export default function SignIn({ setToken, setAdmin }) {
+    const mytheme = createTheme();
+
+    const [email, setEmail] = useState();
+    const [password, setPassword] = useState();
+
+
+    const handleSubmit = async e => {
+        console.log("navigate");
+
+
+
+        e.preventDefault();
+
+
+        const token = await loginUser({
+            email,
+            password
+        });
+
+        setToken(token);
+        if (password === 'lab-password') {
+            setAdmin(true);
+
+        } else {
+            window.alert('Incorrect Login Password!')
+        }
+
+
+
+
+
+
+    }
 
     return (
         <div>
+
             <header>
                 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
                 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
@@ -35,12 +80,12 @@ function OpenWater() {
                                 </li>
                                 <li className="nav-item dropdown">
 
-                                    <a className="nav-link active dropdown-toggle" href="test.html" id="nav-dropdown" data-bs-toggle="dropdown"
+                                    <a className="nav-link dropdown-toggle" href="test.html" id="nav-dropdown" data-bs-toggle="dropdown"
                                         aria-expanded="false" >
                                         Courses
                                     </a>
 
-                                    <ul className="dropdown-menu active" aria-labelledby="nav-dropdown">
+                                    <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
                                         <li><a className="dropdown-item active" href="/OpenWater">Open Water</a></li>
                                         <li><a className="dropdown-item" href="/AdvOpenWater">Advanced Open Water</a></li>
                                         <li><a className="dropdown-item" href="/Rescue">Rescue Diving</a></li>
@@ -54,7 +99,7 @@ function OpenWater() {
                                     <a className="nav-link" href="/Products">Shop</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link " href="/AboutUs">About Us</a>
+                                    <a className="nav-link active " href="/AboutUs">About Us</a>
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link" href="/Contact">Contact</a>
@@ -74,132 +119,107 @@ function OpenWater() {
                             </ul>
                         </div>
                     </div>
-                    <div className="nav-item dropdown" style={{ "width": "170px", "height" : "20px"}} >
-                    
-                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
-                        > 
-                        <i className="fa fa-user" aria-hidden="true"></i>
-                        </div>
-                        
-
-                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
-                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
-                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
-                            <li>
-                                <hr className="dropdown-divider" />
-                            </li>
-                            <li><a className="dropdown-item" href="/">Logout</a></li>
-                        </ul>
-
-                    </div>
                 </nav>
 
             </header>
+            
             <main role="main">
-                <div className="container-fluid jumbotron jumbotron-detail-open-water py-5">
-                    <div className="container">
-                        <h1 className="display-3 fw-bold text-white">Open Water Dive</h1>
-                    </div>
-                </div>
 
-                <div className="container">
-
-                    <h1 className="fw-bolder">Open Water Dive
-                        <small className="fw-normal fst-italic"> Most Exciting course for the beginner!</small>
-                    </h1>
-
-                    <div className="row ">
-
-                        <div className="col-6 col-lg-8">
-
-                            <div className="container-openwater">
-                                <iframe className="responsive-iframe"
-                                    src="https://www.youtube.com/embed/mw-_-sUBPEc?autoplay=1&mute=1"
-                                    title="YouTube video player">
-                                </iframe>
-                            </div>
-
-                        </div>
+                <Container component="main" maxWidth="xs">
+                    
+                    <CssBaseline />
+                    <Box
+                        sx={{
+                            marginTop: 8,
+                            display: 'flex',
+                            flexDirection: 'column',
+                            alignItems: 'center'
 
 
+                        }}>
 
-                        <div className="col-6 col-lg-4">
-                            <h3 className="my-3">About Open Water Dive Course</h3>
-                            <p className="lead text-center">Join the exciting adveture of our Open Water Course!</p>
-                            <p className="user-select-none">This program is for the individual who is seeking Scuba certification. The course is approximately
-                                30 hours of private or semi-private Scuba instruction. Private instruction enables our instructors
-                                to provide a safe and comfortable diving experience that meets your individual needs. This is a
-                                complete Scuba course that combines instruction in basic watermanship skills, diving theory, and
-                                practical diving experience. The emphasis will be on making you a safe, self-sufficient, and
-                                self-reliant diver. Certification cards will be issued upon completion.
-                            </p>
-                            <h3>This course includes the following :</h3>
-                            <ul>
-                                <li>PADI Open Water booklet</li>
-                                <li>Access to PADI eLearning course</li>
-                                <li>5 Classroom Sessions</li>
-                                <li>5 Pool Sessions</li>
-                                <li>4 Open Water Dives</li>
-                                <li>PADI Open Water Exam</li>
-                            </ul>
-                            <p className="user-select-none">All equipment will be provided for
-                                the length of the course.</p>
+                        <Avatar sx={{
+                            m: 1, bgcolor: 'secondery.main'
+                        }}>
 
-                            <div className="row">
+                        </Avatar>
+                        <Typography component="h1" variant='h5'>
+                            Sign in
+                        </Typography>
+                        <Box component="form" noValidate sx={{ mt: 1 }} onSubmit={handleSubmit}>
+                            <Grid container spacing={2}>
+                                <Grid item xs={12}>
+                                    <TextField
+                                        required
+                                        fullWidth
+                                        id="email"
+                                        label="Email Address"
+                                        name="email"
+                                        autoComplete="email"
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        autoFocus>
 
-                                <div className="col-md-4">
-                                    <strong>€ 200.00</strong>
-                                </div>
-                                <div className="col-md-8">
-                                    <a type="button" href="/Contact" className="btn btn-success float-end">
-                                        Get in touch
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                        <h4>A quote from the Diving Team...</h4>
-                        <p className="mb-0 fst-italic"> No matter how much you travel, if you don’t dive, you cannot say you’ve seen the world.
-                        </p>
-                    </div>
+                                    </TextField>
 
-                    <h3 className="display-5 my-4">Other customers also tried...</h3>
 
-                    <div className="row">
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/AllCourses">
-                                <img className="img-fluid" src={homedolphin} alt="dolphin" />
-                            </a>
-                            <p>Close encouter with Dolphin</p>
-                        </div>
+                                </Grid>
 
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/AllCourses">
-                                <img className="img-fluid" src={mermaid} alt="mermaid" />
-                            </a>
-                            <p>Discover Mermaid</p>
-                        </div>
+                                <Grid item xs={12}>
 
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/AllCourses">
-                                <img className="img-fluid" src={photography} alt="photography" />
-                            </a>
-                            <p>Underwater Photography</p>
-                        </div>
+                                    <TextField
+                                        required
+                                        fullWidth
+                                        name="password"
+                                        id="password"
+                                        label="Password"
+                                        type="password"
+                                        autoComplete="current-password"
+                                        onChange={(e) => setPassword(e.target.value)}
 
-                        <div className="col-md-3 col-sm-6 mb-3">
-                            <a href="/AllCourses">
-                                <img className="img-fluid" src={boatdiver} alt="boat dive" />
-                            </a>
-                            <p>Boat Diving</p>
+                                        autoFocus>
+                                    </TextField>
 
-                        </div>
-                    </div>
+                                </Grid>
+                                <FormControlLabel
+                                    control={<Checkbox value="remmber" color="secondary" />}
+                                    label="Remember me" />
+                                <Button
 
-                </div>
+
+                                    type='submit'
+                                    fullWidth
+                                    variant='contained'
+                                    sx={{ mt: 3, mb: 2 }}>
+                                    Sign in
+                                </Button>
+                                <Grid item>
+                                    <Link to="/SignUp">
+                                        {"Don't have an account ? Sign up"}
+                                    </Link>
+                                </Grid>
+
+                            </Grid>
+
+
+
+
+
+                        </Box>
+
+                    </Box>
+
+
+
+
+                </Container>
 
             </main>
+
+
+
+
+
+
             <footer className="main-footer text-white text-center text-lg-start bg-primary">
 
                 <div className="container p-4">
@@ -271,8 +291,7 @@ function OpenWater() {
 
             </footer>
 
-        </div >
-    );
+        </div>
+    )
 }
 
-export default OpenWater;

@@ -4,8 +4,7 @@ import servicesadvancedopen from './images/products/services-advancedopen-small.
 import servicesopensmall from './images/products/services-discoverscuba.jpg';
 import dolphin3 from './images/dolphin3.png';
 import padi5star from './images/5star_IDC.jpg';
-import profilepic from './images/profile-pic.jpg';
-import Products from './Products';
+import './js/submenu';
 
 function Main() {
 
@@ -52,8 +51,8 @@ function Main() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/Products">Shop</a> 
-                                    
+                                    <a className="nav-link" href="/Products">Shop</a>
+
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link " href="/AboutUs">About Us</a>
@@ -73,21 +72,30 @@ function Main() {
                                     <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
                                         <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
                                         <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                                        <li><a className="dropdown-item" href="/">External Links &raquo; </a>
+                                            <ul className="submenu dropdown-menu">
+                                                <li><a className="dropdown-item" target="_blank" href="https://www.padi.com/" rel="noreferrer">PADI Website</a></li>
+                                                <li><a className="dropdown-item" target="_blank" href="https://www.daneurope.org/en/home" rel="noreferrer">DAN Website</a></li>
+                                            </ul>
+                                        </li>
                                     </ul>
                                 </li>
+
 
                             </ul>
 
                         </div>
                     </div>
 
-                    <div className="nav-item dropdown" style={{ "width": "170px" }} >
+                    <div className="nav-item dropdown" style={{ "width": "170px", "height": "20px" }} >
 
                         <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
-                        > <img alt="John Doe" src={profilepic} />
+                        >
+                            <i className="fa fa-user" aria-hidden="true"></i>
                         </div>
 
-                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
+
+                        <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
                             <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
                             <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
                             <li>
@@ -191,7 +199,7 @@ function Main() {
                         <aside className="col-lg-4">
                             <div className="p-4 mb-3 mt-2 bg-light rounded">
                                 <h4>Thank You for Joining Us !</h4>
-                                <p className="mb-0 fst-italic">We are a proud 5 star <a href="https://www.padi.com/">PADI</a> facility incorporating our own Dive Shop
+                                <p className="mb-0 fst-italic">We are a proud 5 star <a target="_blank" href="https://www.padi.com/" rel="noreferrer">PADI</a> facility incorporating our own Dive Shop
                                     and Servicing
                                     Centre, we thrive on quality service, safety and of course a lot of fun!</p>
 

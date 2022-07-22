@@ -6,6 +6,10 @@ import './js/form-validation'
 
 function Contact() {
 
+    const handleSubmit = (event) => {
+            window.alert(`Message delivered Successfully! Thank you.`)
+        }
+    
     return (
         <div>
             <header>
@@ -70,6 +74,24 @@ function Contact() {
                             </ul>
                         </div>
                     </div>
+                    <div className="nav-item dropdown" style={{ "width": "170px", "height" : "20px"}} >
+                    
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
+                        > 
+                        <i className="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        
+
+                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
+                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
+                            <li>
+                                <hr className="dropdown-divider" />
+                            </li>
+                            <li><a className="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+
+                    </div>
                 </nav>
 
             </header>
@@ -89,7 +111,7 @@ function Contact() {
                     </h1>
 
 
-                    <form class="needs-validation" action="/" method="get" novalidate>
+                    <form class="needs-validation" action="/" onSubmit={handleSubmit}  method="get" novalidate>
 
 
                         <div className="row mt-3">
@@ -117,7 +139,7 @@ function Contact() {
                                 </div>
 
                                 <div className="mb-2">
-                                    <input type="text" className="form-control" placeholder="Your Email *" aria-label="email" required />
+                                    <input type="email" className="form-control" placeholder="Your Email *" aria-label="email" required />
                                 </div>
                                 <div className="mb-2">
                                     <input type="text" className="form-control" placeholder="Your Phone Number *"

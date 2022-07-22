@@ -101,7 +101,7 @@ export default function CreateProduct() {
 
             <main role="main">
 
-                <div className="container">
+                <div className="container py-5 h-100">
 
                     <h1> Add new Product</h1>
                     <form noValidate onSubmit={handleProductCreation}>
@@ -186,8 +186,8 @@ export default function CreateProduct() {
 
                         <Button type='submit' fullWidth variant='outlined' >Submit</Button>
                         <Button type='reset' fullWidth variant='outlined'>Reset</Button>
-
                     </form>
+
                 </div>
             </main>
 

@@ -1,19 +1,15 @@
-import { Button, Container, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle, Grid, LinearProgress, Typography } from '@mui/material'
+import { Button, Dialog, DialogActions, DialogContent, DialogContentText, DialogTitle } from '@mui/material'
 import React, { useEffect, useState } from 'react'
 import ProductCard from './ProductCard';
 import Basket from './Basket';
 import Header from './Header';
-import { useNavigate } from 'react-router-dom';
-
 import dolphinico from './images/dolphin.ico';
 import dolphin3 from './images/dolphin3.png';
 
 export default function Products({ isAdmin }) {
 
-  console.log('value of admin before' + isAdmin)
-  const productAdmin= isAdmin && "with product admin enabled"
 
-  
+  const productAdmin= isAdmin && "with product admin enabled"
 
   // use State to monitor the products data
   const [products, setProducts] = useState(null);
@@ -35,12 +31,6 @@ export default function Products({ isAdmin }) {
   )
   // set a state for prgress bar
   const [progress, setProgress] = useState(0);
-
-  
-  
-
-
-
 
   useEffect(() => {
     const timer = setInterval(() => {
@@ -65,8 +55,7 @@ export default function Products({ isAdmin }) {
 
   const handleDelete = async (id) => {
 
-    if (!isAdmin) {
-      console.log('your not allowed to delete')
+    if (!isAdmin) {  
       window.alert('Not allowed! Login Required')
     } else {
 
@@ -80,14 +69,15 @@ export default function Products({ isAdmin }) {
         }).then(() => {
           const newProducts = products.filter(product => product.id !== id);
           setProducts(newProducts);
+          console.log("New prod"+newProducts);
+          
         })
 
       }
+      
     }
 
   }
-
-
 
   const [cartItems, setCartItems] = useState([]);
   const onAdd = (product) => {
@@ -186,6 +176,24 @@ export default function Products({ isAdmin }) {
 
             </div>
           </div>
+          <div className="nav-item dropdown" style={{ "width": "170px", "height" : "20px"}} >
+                    
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
+                        > 
+                        <i className="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        
+
+                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
+                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
+                            <li>
+                                <hr className="dropdown-divider" />
+                            </li>
+                            <li><a className="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+
+                    </div>
         </nav>
 
       </header>
@@ -204,9 +212,6 @@ export default function Products({ isAdmin }) {
             </h1> 
           </div>
         </div>
-
-
-        {/* <LinearProgress variant="determinate" value={progress} color="secondary" /> */}
 
         <div className="progress" style={{ "height": "5px" }}>
           <div className="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style={{ "width": String(progress) + "%" }} aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -252,11 +257,8 @@ export default function Products({ isAdmin }) {
             </DialogActions>
           </DialogContent>
         </Dialog>
-
-
       </div>
       <br></br>
-
 
       <footer className="main-footer text-white text-center text-lg-start bg-primary">
 

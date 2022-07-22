@@ -1,6 +1,5 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-import openwatersmall from './images/products/services-advancedopen-small.jpg';
 import mermaid from './images/products/mermaid-small.jpg';
 import homedolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
@@ -73,6 +72,24 @@ function AdvOpenWater() {
                             </ul>
                         </div>
                     </div>
+                    <div className="nav-item dropdown" style={{ "width": "170px", "height" : "20px"}} >
+                    
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
+                        > 
+                        <i className="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        
+
+                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
+                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
+                            <li>
+                                <hr className="dropdown-divider" />
+                            </li>
+                            <li><a className="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+
+                    </div>
                 </nav>
 
             </header>
@@ -97,6 +114,7 @@ function AdvOpenWater() {
                                     title="YouTube video player"></iframe>
                             </div>
                         </div>
+
 
                         <div className="col-6 col-lg-4">
                             <h3 className="my-3">About Advanced Open Water Dive Course</h3>
@@ -136,6 +154,7 @@ function AdvOpenWater() {
                             </div>
                         </div>
                     </div>
+                    
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
                         <h4>Quote from Edmund Hillary...</h4>
                         <p className="mb-0 fst-italic"> It’s not the depths we conquer, but ourselves.

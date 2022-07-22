@@ -60,12 +60,7 @@ export default function Basket(props) {
               </div>
             </div>
             <hr />
-            <div className="col-md text-center">
-            {/*   
-              <button type="button" class="btn btn-success" onClick={() => alert('Implement Checkout!') }>
-                Checkout
-              </button>
-              */}
+            <div className="col-md text-center">          
 
               <a type="button" href="/Order" className="btn btn-success">                
                 Checkout

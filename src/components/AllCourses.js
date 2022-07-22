@@ -104,6 +104,24 @@ function AllCourses() {
                             </ul>
                         </div>
                     </div>
+                    <div className="nav-item dropdown" style={{ "width": "170px", "height" : "20px"}} >
+                    
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
+                        > 
+                        <i className="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        
+
+                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
+                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
+                            <li>
+                                <hr className="dropdown-divider" />
+                            </li>
+                            <li><a className="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+
+                    </div>
                 </nav>
 
             </header>

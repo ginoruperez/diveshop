@@ -1,6 +1,5 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-import rescuesmall from './images/products/services-rescue-small.jpg';
 import mermaid from './images/products/mermaid-small.jpg';
 import homedolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
@@ -73,6 +72,24 @@ function Rescue() {
                                 </li>
                             </ul>
                         </div>
+                    </div>
+                    <div className="nav-item dropdown" style={{ "width": "170px", "height" : "20px"}} >
+                    
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
+                        > 
+                        <i className="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        
+
+                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
+                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
+                            <li>
+                                <hr className="dropdown-divider" />
+                            </li>
+                            <li><a className="dropdown-item" href="/">Logout</a></li>
+                        </ul>
+
                     </div>
                 </nav>
 

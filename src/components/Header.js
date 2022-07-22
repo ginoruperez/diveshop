@@ -2,19 +2,7 @@ import React from 'react';
 
 export default function Header(props) {
     return (
-        <div>
-             
-            {/*
-            <header>
-                <div>
-                    <div className="container-fluid jumbotron jumbotron-shop py-5">
-                        <div className="container">
-                            <h1 className="display-3 fw-bold text-white">Dive Shop</h1>
-                        </div>
-                    </div>
-
-                </div>
-    </header> */}
+        <div>                        
 
             <div className="container">
                 <div>

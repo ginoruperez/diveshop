@@ -12,6 +12,17 @@
       "rating": 4
     },
     {
+      "id": 2,
+      "title": "Hats",
+      "type": "Accessories",
+      "description": "PADI Cap",
+      "filename": "https://cdn.shopify.com/s/files/1/0214/3620/3072/products/PADI-Merchant-Tailor-Hats-Blue-Camo-Trucker-3_460x460@2x.jpg?v=1603398534",
+      "height": 450,
+      "width": 299,
+      "price": 29.45,
+      "rating": 4
+    },
+    {
       "id": 3,
       "title": "Diving Boots",
       "type": "Boots",
@@ -21,6 +32,17 @@
       "width": 299,
       "price": 18.95,
       "rating": 3
+    },
+    {
+      "id": 4,
+      "title": "Regulator",
+      "type": "Diving Equipment",
+      "description": "Scubapro MK17 DIN / C370 / R095 Octopus",
+      "filename": "https://files.evediving.com/store/7716/StoreFiles/ProductImages/Scubpro/Regulator%20Set/500x500/C370_Reg_Left_LR1.jpg",
+      "height": 600,
+      "width": 399,
+      "price": 17.68,
+      "rating": 4
     },
     {
       "id": 5,
@@ -89,13 +111,26 @@
       "rating": 2
     },
     {
-      "title": "Dry Suit",
-      "description": "Dry Suit",
-      "category": "dive suit",
-      "rating": 3,
-      "price": "500",
-      "filename": "https://cdn.wetsuitoutlet.ie/images/1x1/thumbs/Crewsaver-Atacama-Sport-Drysuit-Main.700x700.jpg",
-      "id": 13
+      "id": 11,
+      "title": "Dive Gloves",
+      "type": "Gloves",
+      "description": "Aqualung Gloves, Admiral Wmn's",
+      "filename": "https://usfiles.evediving.com/store/5415/StoreFiles/ProductImages/Aqualung/Gloves/500x500/admiral%20purp4.jpg",
+      "height": 600,
+      "width": 400,
+      "price": 25.62,
+      "rating": 3
+    },
+    {
+      "id": 12,
+      "title": "Dive Knives",
+      "type": "Knife",
+      "description": "Innovative Scuba Knife w/Line Cutter",
+      "filename": "https://usfiles.evediving.com/store/5415/StoreFiles/ProductImages/Innovative%20Scuba/Knives/500x500/gumgna_1200_900.jpg",
+      "height": 600,
+      "width": 401,
+      "price": 18.18,
+      "rating": 1
     }
   ]
 }
