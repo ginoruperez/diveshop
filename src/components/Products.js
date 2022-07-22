@@ -8,16 +8,16 @@ import { useNavigate } from 'react-router-dom';
 import dolphinico from './images/dolphin.ico';
 import dolphin3 from './images/dolphin3.png';
 
-export default function Products() {
+export default function Products({ isAdmin }) {
 
+  console.log('value of admin before' + isAdmin)
+  const productAdmin= isAdmin && "with product admin enabled"
 
-
-
+  
 
   // use State to monitor the products data
   const [products, setProducts] = useState(null);
 
-  console.log(products);
 
   // use effect to get the data from the server api  
   // Make a state for pending loading data 
@@ -35,6 +35,10 @@ export default function Products() {
   )
   // set a state for prgress bar
   const [progress, setProgress] = useState(0);
+
+  
+  
+
 
 
 
@@ -61,17 +65,24 @@ export default function Products() {
 
   const handleDelete = async (id) => {
 
-    setShowDeleteMsg(true);
-    if (deleteItem && !showDeleteMsg) {
-      console.log("handleDelete()", "deleteItem " + deleteItem, "showDeleteMsg " + showDeleteMsg);
+    if (!isAdmin) {
+      console.log('your not allowed to delete')
+      window.alert('Not allowed! Login Required')
+    } else {
 
-      await fetch('http://localhost:8000/products/' + id, {
-        method: 'DELETE'
-      }).then(() => {
-        const newProducts = products.filter(product => product.id !== id);
-        setProducts(newProducts);
-      })
 
+      setShowDeleteMsg(true);
+      if (deleteItem && !showDeleteMsg) {
+        console.log("handleDelete()", "deleteItem " + deleteItem, "showDeleteMsg " + showDeleteMsg);
+
+        await fetch('http://localhost:8000/products/' + id, {
+          method: 'DELETE'
+        }).then(() => {
+          const newProducts = products.filter(product => product.id !== id);
+          setProducts(newProducts);
+        })
+
+      }
     }
 
   }
@@ -188,7 +199,9 @@ export default function Products() {
 
         <div className="row" >
           <div className="col-6 col-lg-12">
-            <h1 className="my-3">Product Page</h1>
+            <h1 className="my-3">Product Page 
+              <small className="fw-normal fst-italic"> {productAdmin} </small>
+            </h1> 
           </div>
         </div>
 
@@ -212,7 +225,7 @@ export default function Products() {
               products.map(product => (
 
                 <div className="card-product" >
-                  <ProductCard key={product.id} product={product} onAdd={onAdd} handleDelete={handleDelete} ></ProductCard>
+                  <ProductCard key={product.id} product={product} onAdd={onAdd} handleDelete={handleDelete} isAdmin={isAdmin} ></ProductCard>
                 </div>
 
               ))

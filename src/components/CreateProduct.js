@@ -112,7 +112,8 @@ export default function CreateProduct() {
                             required
                             autoFocus
                             variant='outlined'
-                            color="info">
+                            color="info" 
+                            margin="dense">
 
                         </TextField>
 
@@ -125,7 +126,8 @@ export default function CreateProduct() {
                             variant='outlined'
                             color='info'
                             multiline
-                            rows={6}>
+                            rows={6}
+                            margin="dense">
 
                         </TextField>
 
@@ -138,6 +140,7 @@ export default function CreateProduct() {
                             fullWidth
                             variant='outlined'
                             color='info'
+                            margin="dense"
                         >
 
                         </TextField>
@@ -148,7 +151,8 @@ export default function CreateProduct() {
                             fullWidth
                             variant='outlined'
 
-                            color='info'>
+                            color='info'
+                            margin="dense">
 
                         </TextField>
 
@@ -180,7 +184,7 @@ export default function CreateProduct() {
                             }}
                         />
 
-                        <Button type='submit' fullWidth variant='outlined'>Submit</Button>
+                        <Button type='submit' fullWidth variant='outlined' >Submit</Button>
                         <Button type='reset' fullWidth variant='outlined'>Reset</Button>
 
                     </form>

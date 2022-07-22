@@ -5,11 +5,9 @@ import servicesopensmall from './images/products/services-discoverscuba.jpg';
 import dolphin3 from './images/dolphin3.png';
 import padi5star from './images/5star_IDC.jpg';
 import profilepic from './images/profile-pic.jpg';
-
-
+import Products from './Products';
 
 function Main() {
-
 
     return (
         <div>
@@ -54,7 +52,8 @@ function Main() {
                                     </ul>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link" href="/Products">Shop</a>
+                                    <a className="nav-link" href="/Products">Shop</a> 
+                                    
                                 </li>
                                 <li className="nav-item">
                                     <a className="nav-link " href="/AboutUs">About Us</a>
@@ -89,8 +88,8 @@ function Main() {
                         </div>
 
                         <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
-                            <li><a className="dropdown-item" href="/SignIn">Sign-In</a></li>
-                            <li><a className="dropdown-item" href="/Contact">Sign-Up</a></li>
+                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
+                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
                             <li>
                                 <hr className="dropdown-divider" />
                             </li>
@@ -98,10 +97,6 @@ function Main() {
                         </ul>
 
                     </div>
-
-                
-
-
 
                 </nav>
 

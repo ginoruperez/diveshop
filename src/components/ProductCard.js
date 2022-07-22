@@ -2,16 +2,19 @@ import React, { useState } from 'react'
 
 import { useNavigate } from 'react-router-dom';
 
-export default function ProductCard({ product, onAdd, handleDelete}) {
+export default function ProductCard({ product, onAdd, handleDelete, isAdmin }) {
   const { id } = product;
 
-  const [active, setActive] = useState(true);
+
 
   const navigateTo = useNavigate();
 
   const handleCreate = (e) => {
-    console.log('TEST ONLY CREATE');
-    navigateTo('/CreateProduct');
+    if(isAdmin){
+      navigateTo('/CreateProduct');
+    }else{
+      window.alert('Not allowed! Login required')
+    }
   }
 
   return (
@@ -35,8 +38,11 @@ export default function ProductCard({ product, onAdd, handleDelete}) {
                 data-bs-toggle="offcanvas" data-bs-target="#shoppingCart" aria-controls="shoppingCart">
                 Add to Cart
               </a>
-              <button className="btn" onClick={() => handleDelete(id)} ><i className="fa fa-trash"></i></button>
-              <button className="btn" onClick={() => handleCreate()}><i className="fa fa-plus"></i></button>
+
+              <button className="btn" onClick={() => { handleDelete(id) }} ><i className="fa fa-trash"></i></button>
+              <button className="btn" onClick={() => { handleCreate() }}><i className="fa fa-plus"></i></button>
+
+
             </div>
           </div>
         </div>

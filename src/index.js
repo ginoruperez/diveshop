@@ -19,6 +19,8 @@ import Faq from './components/Faq';
 import Products from './components/Products';
 import CreateProduct from './components/CreateProduct';
 import SignIn from './components/SignIn';
+import SignInLink from './components/SignInLink';
+import SignUp from './components/SignUp';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -39,6 +41,8 @@ root.render(
       <Route path="Products" element={<Products />} />
       <Route path="CreateProduct" element={<CreateProduct />} />
       <Route path="SignIn" element={<SignIn />} />
+      <Route path="SignInLink" element={<SignInLink />} />
+      <Route path="SignUp" element={<SignUp />} />
 
 
     </Routes>
