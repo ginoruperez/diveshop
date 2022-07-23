@@ -4,12 +4,12 @@ import ProductCard from './ProductCard';
 import Basket from './Basket';
 import Header from './Header';
 import dolphinico from './images/dolphin.ico';
-import dolphin3 from './images/dolphin3.png';
+import { footer } from './Footer';
 
 export default function Products({ isAdmin }) {
 
 
-  const productAdmin= isAdmin && "with product admin enabled"
+  const productAdmin = isAdmin && "with product admin enabled"
 
   // use State to monitor the products data
   const [products, setProducts] = useState(null);
@@ -55,7 +55,7 @@ export default function Products({ isAdmin }) {
 
   const handleDelete = async (id) => {
 
-    if (!isAdmin) {  
+    if (!isAdmin) {
       window.alert('Not allowed! Login Required')
     } else {
 
@@ -69,12 +69,12 @@ export default function Products({ isAdmin }) {
         }).then(() => {
           const newProducts = products.filter(product => product.id !== id);
           setProducts(newProducts);
-          console.log("New prod"+newProducts);
-          
+          console.log("New prod" + newProducts);
+
         })
 
       }
-      
+
     }
 
   }
@@ -111,8 +111,6 @@ export default function Products({ isAdmin }) {
 
     <div>
       <header>
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
         <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
           <div className="container">
             <a className="navbar-brand" href="/">
@@ -169,6 +167,12 @@ export default function Products({ isAdmin }) {
                   <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
                     <li><a className="dropdown-item" href="/Testimonial">Testimonial</a></li>
                     <li><a className="dropdown-item" href="/Faq">FAQ</a></li>
+                    <li><a className="dropdown-item" href="/">External Links &raquo; </a>
+                      <ul className="submenu dropdown-menu">
+                        <li><a className="dropdown-item" target="_blank" href="https://www.padi.com/" rel="noreferrer">PADI Website</a></li>
+                        <li><a className="dropdown-item" target="_blank" href="https://www.daneurope.org/en/home" rel="noreferrer">DAN Website</a></li>
+                      </ul>
+                    </li>
                   </ul>
                 </li>
 
@@ -176,24 +180,23 @@ export default function Products({ isAdmin }) {
 
             </div>
           </div>
-          <div className="nav-item dropdown" style={{ "width": "170px", "height" : "20px"}} >
-                    
-                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
-                        > 
-                        <i className="fa fa-user" aria-hidden="true"></i>
-                        </div>
-                        
+          <div className="nav-item dropdown" style={{ "width": "170px", "height": "20px" }} >
 
-                        <ul className="dropdown-menu"  aria-labelledby="nav-dropdown">
-                            <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
-                            <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
-                            <li>
-                                <hr className="dropdown-divider" />
-                            </li>
-                            <li><a className="dropdown-item" href="/">Logout</a></li>
-                        </ul>
+            <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown">
+              <i className="fa fa-user" aria-hidden="true"></i>
+            </div>
 
-                    </div>
+
+            <ul className="dropdown-menu" aria-labelledby="nav-dropdown">
+              <li><a className="dropdown-item" href="/SignInLink">Sign-In</a></li>
+              <li><a className="dropdown-item" href="/SignUp">Sign-Up</a></li>
+              <li>
+                <hr className="dropdown-divider" />
+              </li>
+              <li><a className="dropdown-item" href="/">Logout</a></li>
+            </ul>
+
+          </div>
         </nav>
 
       </header>
@@ -205,11 +208,18 @@ export default function Products({ isAdmin }) {
 
       <div className="container">
 
+        <nav className="my-3 ms-3" >
+          <ol className="breadcrumb">
+            <li className="breadcrumb-item"><a href="/">Home</a></li>
+            <li className="breadcrumb-item">Shop</li>
+          </ol>
+        </nav>
+
         <div className="row" >
           <div className="col-6 col-lg-12">
-            <h1 className="my-3">Product Page 
+            <h1 className="my-3">Product Page
               <small className="fw-normal fst-italic"> {productAdmin} </small>
-            </h1> 
+            </h1>
           </div>
         </div>
 
@@ -259,77 +269,9 @@ export default function Products({ isAdmin }) {
         </Dialog>
       </div>
       <br></br>
-
-      <footer className="main-footer text-white text-center text-lg-start bg-primary">
-
-        <div className="container p-4">
-
-          <div className="row mt-4">
-            <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
-
-              <img src={dolphin3} width="180" height="180" className="d-inline-block align-top"
-                alt="Celtic Sea Dive Shop Logo" />
-
-            </div>
-            <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-
-              <h5 className="text-uppercase mb-4">Follow Us</h5>
+      {footer}
 
 
-              <div className="mt-4">
-                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
-                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
-                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
-                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
-              </div>
-
-
-              <ul className="fa-ul" >
-                <li className="mb-3">
-                  <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
-                </li>
-                <li className="mb-3">
-                  <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
-                    <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
-                </li>
-                <li className="mb-3">
-                  <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>
-                </li>
-                <li className="mb-3">
-                  <span className="fa-li"><i className="fas fa-print"></i></span><span className="ms-1">+ 353 234 567 89</span>
-                </li>
-              </ul>
-            </div>
-
-            <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-              <h5 className="text-uppercase mb-4">Opening hours</h5>
-
-              <table className="table text-center text-white">
-                <tbody className="font-weight-normal">
-                  <tr>
-                    <td>Mon - Thu:</td>
-                    <td>8am - 9pm</td>
-                  </tr>
-                  <tr>
-                    <td>Fri - Sat:</td>
-                    <td>8am - 5pm</td>
-                  </tr>
-                  <tr>
-                    <td>Sunday:</td>
-                    <td>9am - 7pm</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-          </div>
-
-
-        </div>
-
-        <div className="copyright text-center py-3">Copyright © 2022 Celtic Sea Dive Shop. All Rights Reserved.</div>
-
-
-      </footer>
     </div>
   )
 }

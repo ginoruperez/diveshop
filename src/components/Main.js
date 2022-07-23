@@ -2,17 +2,15 @@ import dolphinico from './images/dolphin.ico';
 import dolphinsmall from './images/products/dolphin-small.jpg';
 import servicesadvancedopen from './images/products/services-advancedopen-small.jpg';
 import servicesopensmall from './images/products/services-discoverscuba.jpg';
-import dolphin3 from './images/dolphin3.png';
 import padi5star from './images/5star_IDC.jpg';
 import './js/submenu';
+import { footer } from './Footer';
 
 function Main() {
 
     return (
         <div>
             <header>
-                <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
-                <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
                 <nav className="navbar navbar-expand-lg fixed-top navbar-dark bg-primary">
                     <div className="container">
                         <a className="navbar-brand" href="/">
@@ -89,8 +87,7 @@ function Main() {
 
                     <div className="nav-item dropdown" style={{ "width": "170px", "height": "20px" }} >
 
-                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
-                        >
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown">
                             <i className="fa fa-user" aria-hidden="true"></i>
                         </div>
 
@@ -209,10 +206,6 @@ function Main() {
                         </aside>
                     </div>
                 </div>
-
-
-
-
                 <div className="container history">
                     <h2 className="pb-4 mb-2 mt-5">Exciting Dive Adventure for the Season!</h2>
                     <div className="row row-cols-1 row-cols-lg-2 row-cols-xxl-3 g-4">
@@ -261,79 +254,9 @@ function Main() {
 
 
             </main>
+            {footer}
 
-            <footer className="main-footer text-white text-center text-lg-start bg-primary">
-
-                <div className="container p-4">
-
-                    <div className="row mt-4">
-                        <div className="col-lg-4 col-md-12 mb-4 mb-md-0">
-
-                            <img src={dolphin3} width="180" height="180" className="d-inline-block align-top"
-                                alt="Celtic Sea Dive Shop Logo" />
-
-                        </div>
-                        <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-
-                            <h5 className="text-uppercase mb-4">Follow Us</h5>
-
-
-                            <div className="mt-4">
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.facebook.com/Celtic-Sea-Dive-Shop-100920469106278"><i className="fab fa-facebook-f"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.instagram.com/celticdive/"><i className="fab fa-instagram"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://twitter.com/CelticDive"><i className="fab fa-twitter"></i></a>
-                                <a type="button" className="btn btn-floating btn-primary btn-lg" href="https://www.youtube.com/watch?v=wijB506FJTc"><i className="fab fa-youtube"></i></a>
-                            </div>
-
-
-                            <ul className="fa-ul" >
-                                <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-home"></i></span><span className="ms-1">Unit 1 Blackrock Road Kinsale Ireland</span>
-                                </li>
-                                <li className="mb-3">
-
-                                    <span className="fa-li"><i className="fas fa-envelope"></i></span><span className="ms-1">
-                                        <a href="mailto:info@celticdiveshop.ie">info@celticdiveshop.com </a> </span>
-                                </li>
-                                <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-phone"></i></span><span className="ms-1">+ 353 234 567 88</span>
-                                </li>
-                                <li className="mb-3">
-                                    <span className="fa-li"><i className="fas fa-print"></i></span><span className="ms-1">+ 353 234 567 89</span>
-                                </li>
-                            </ul>
-                        </div>
-
-                        <div className="col-lg-4 col-md-6 mb-4 mb-md-0">
-                            <h5 className="text-uppercase mb-4">Opening hours</h5>
-
-                            <table className="table text-center text-white">
-                                <tbody className="font-weight-normal">
-                                    <tr>
-                                        <td>Mon - Thu:</td>
-                                        <td>8am - 9pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Fri - Sat:</td>
-                                        <td>8am - 5pm</td>
-                                    </tr>
-                                    <tr>
-                                        <td>Sunday:</td>
-                                        <td>9am - 7pm</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div className="copyright text-center py-3">Copyright © 2022 Celtic Sea Dive Shop. All Rights Reserved.</div>
-
-
-            </footer>
-
+            
         </div>
     );
 }
