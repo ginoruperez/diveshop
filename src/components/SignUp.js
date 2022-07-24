@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import dolphinico from './images/dolphin.ico';
-import './js/form-validation';
 import { useNavigate } from 'react-router-dom';
 import { footer } from './Footer';
 
@@ -127,12 +126,12 @@ export default function SignUp() {
                                             <form name="register" onSubmit={handleSubmit}>
 
                                                 <div className="form-outline mb-4">
-                                                    <input type="text" id="form3Example1cg" className="form-control form-control-lg" />
+                                                    <input type="text" id="form3Example1cg" className="form-control form-control-lg" required />
                                                     <label className="form-label" htmlFor="form3Example1cg">Your Name</label>
                                                 </div>
 
                                                 <div className="form-outline mb-4">
-                                                    <input type="email" id="form3Example3cg" className="form-control form-control-lg" />
+                                                    <input type="email" id="form3Example3cg" className="form-control form-control-lg" required/>
                                                     <label className="form-label" htmlFor="form3Example3cg">Your Email</label>
                                                 </div>
 

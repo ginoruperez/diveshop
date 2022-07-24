@@ -3,7 +3,6 @@ import dolphinsmall from './images/products/dolphin-small.jpg';
 import servicesadvancedopen from './images/products/services-advancedopen-small.jpg';
 import servicesopensmall from './images/products/services-discoverscuba.jpg';
 import padi5star from './images/5star_IDC.jpg';
-import './js/submenu';
 import { footer } from './Footer';
 
 function Main() {

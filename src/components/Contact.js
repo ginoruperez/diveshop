@@ -1,6 +1,5 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
-import './js/form-validation';
 import { footer } from './Footer';
 
 
@@ -120,7 +119,7 @@ function Contact() {
                     </h1>
 
 
-                    <form className="needs-validation" action="/" onSubmit={handleSubmit} method="get" noValidate>
+                    <form className="needs-validation" action="/" onSubmit={handleSubmit} method="get" >
 
 
                         <div className="row mt-3">

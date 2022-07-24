@@ -146,14 +146,14 @@ export default function SignIn({ setToken, setAdmin }) {
                                     <h3 className="mb-5">Sign in</h3>
 
                                     <div className="form-outline mb-4">
-                                        <input type="email" id="typeEmailX-2" className="form-control form-control-lg"
-                                            onChange={(e) => setEmail(e.target.value)} />
+                                        <input type="email" id="typeEmailX-2" className="form-control form-control-lg" required
+                                            onChange={(e) => setEmail(e.target.value)}  />
                                         <label className="form-label" htmlFor="typeEmailX-2">Email</label>
                                     </div>
 
                                     <div className="form-outline mb-4">
                                         <input type="password" id="typePasswordX-2" className="form-control form-control-lg"
-                                            onChange={(e) => setPassword(e.target.value)} />
+                                            onChange={(e) => setPassword(e.target.value)} required />
                                         <label className="form-label" htmlFor="typePasswordX-2">Password</label>
                                     </div>
 

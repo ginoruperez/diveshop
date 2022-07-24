@@ -112,11 +112,11 @@ function Order() {
 
                         <div className="col-md-7 col-lg-8">
                             <h4 className="mb-3">Your address</h4>
-                            <form className="needs-validation" action="/" method="get" noValidate >
+                            <form className="needs-validation" action="/" method="get"  >
                                 <div className="row g-3">
                                     <div className="col-sm-6">
                                         <label htmlFor="firstName" className="form-label">First name</label>
-                                        <input type="text" className="form-control" id="firstName" placeholder="" />
+                                        <input type="text" className="form-control" id="firstName" placeholder="" required/>
                                         <div className="invalid-feedback">
                                             Valid first name is required.
                                         </div>
@@ -124,7 +124,7 @@ function Order() {
 
                                     <div className="col-sm-6">
                                         <label htmlFor="lastName" className="form-label">Last name</label>
-                                        <input type="text" className="form-control" id="lastName" placeholder="" />
+                                        <input type="text" className="form-control" id="lastName" placeholder=""  required />
                                         <div className="invalid-feedback">
                                             Valid last name is required.
                                         </div>
@@ -133,7 +133,7 @@ function Order() {
                                     <div className="col-12">
                                         <label htmlFor="email" className="form-label">Email <span
                                             className="text-muted">(Optional)</span></label>
-                                        <input type="email" className="form-control" id="email" placeholder="you@example.com" />
+                                        <input type="email" className="form-control" id="email" placeholder="you@example.com" required />
                                         <div className="invalid-feedback">
                                             Please enter a valid email address htmlFor shipping updates.
                                         </div>
