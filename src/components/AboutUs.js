@@ -129,7 +129,7 @@ function AboutUs() {
                         <div className="col-6 col-lg-12">
                             <h3 className="my-3">About Us!</h3>
 
-                            <p className="user-select-none">
+                            <div className="user-select-none">
                                 <section>
                                     Gino Ruperez is the owner of Celtic Sea Dive Shop located in Kinsale, Southwest coast of Ireland
                                     near Celtic Sea. It has been in operation since 2015 in Ireland. The idea of forming a Dive Shop
@@ -170,7 +170,7 @@ function AboutUs() {
                                     proud <strong><em>5 star PADI facility</em></strong> as well as sales and repairs.
                                 </section>
                                 <br />
-                            </p>
+                            </div>
                         </div>
                     </div>
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
@@ -190,7 +190,7 @@ function AboutUs() {
                                     <img className="card-img-top" src={diverjohn} alt="diver" />
                                     <div className="card-body">
                                         <h5 className="card-title">David John Walker</h5>
-                                        <p className="card-text"><strong> <em>Certified PADI Instructor</em> </strong> He is qualified to teach a wide range of
+                                        <div className="card-text"><strong> <em>Certified PADI Instructor</em> </strong> He is qualified to teach a wide range of
                                             diving courses:
                                             <ul>
                                                 <li>Open Water Dive</li>
@@ -200,7 +200,7 @@ function AboutUs() {
                                                 <li>Navigation</li>
                                                 <li>Underwater Video and Photography</li>
                                                 <li>Deep Technical Diving</li>
-                                            </ul></p>
+                                            </ul></div>
                                     </div>
 
                                 </div>

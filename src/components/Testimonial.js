@@ -128,78 +128,78 @@ function Testimonial() {
                     <div className="carousel-inner">
                         <div className="carousel-item  active">
                             <div className="carousel-caption">
-                                <img class="rounded-circle shadow-1-strong mb-4"
+                                <img className="rounded-circle shadow-1-strong mb-4"
                                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(10).webp" alt="avatar" />
-                                <div class="row d-flex justify-content-center">
+                                <div className="row d-flex justify-content-center">
 
-                                    <div class="col-lg-8" >
-                                        <h5 class="mb-3">Maria Kate</h5>
+                                    <div className="col-lg-8" >
+                                        <h5 className="mb-3">Maria Kate</h5>
                                         <p>Photographer</p>
-                                        <p class="text-muted">
-                                            <i class="fas fa-quote-left pe-2"></i>
+                                        <p className="text-muted">
+                                            <i className="fas fa-quote-left pe-2"></i>
                                             Just to say, I had an absolute FANTASTIC evening on Tuesday.
                                             I haven't stopped taking about it since and convincing everyone to take up scuba!
                                             It really was brilliant and I cant wait til next week!
                                         </p>
                                     </div>
-                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="far fa-star fa-sm"></i></li>
+                                    <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="far fa-star fa-sm"></i></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className="carousel-caption">
-                                <img class="rounded-circle shadow-1-strong mb-4"
+                                <img className="rounded-circle shadow-1-strong mb-4"
                                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(32).webp" alt="avatar" />
-                                <div class="row d-flex justify-content-center">
+                                <div className="row d-flex justify-content-center">
 
-                                    <div class="col-lg-8" >
-                                        <h5 class="mb-3">John Doe</h5>
+                                    <div className="col-lg-8" >
+                                        <h5 className="mb-3">John Doe</h5>
                                         <p>Web Developer</p>
-                                        <p class="text-muted">
-                                            <i class="fas fa-quote-left pe-2"></i>
+                                        <p className="text-muted">
+                                            <i className="fas fa-quote-left pe-2"></i>
                                             My advanced open water course was great, thanks to my instructor and Divemaster, I had a great experience.
                                             I would not have done it with any other instructor. Overall Celtic Diving Team and its crew are amazing when it comes to diving,
                                             huge experience and knowledge between them.
                                         </p>
                                     </div>
-                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="far fa-star fa-sm"></i></li>
+                                    <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="far fa-star fa-sm"></i></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                         <div className="carousel-item">
                             <div className="carousel-caption">
-                                <img class="rounded-circle shadow-1-strong mb-4"
+                                <img className="rounded-circle shadow-1-strong mb-4"
                                     src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" alt="avatar" />
-                                <div class="row d-flex justify-content-center">
+                                <div className="row d-flex justify-content-center">
 
-                                    <div class="col-lg-8" >
-                                        <h5 class="mb-3">Anna Deynah</h5>
+                                    <div className="col-lg-8" >
+                                        <h5 className="mb-3">Anna Deynah</h5>
                                         <p>Registered Nurse</p>
-                                        <p class="text-muted">
-                                            <i class="fas fa-quote-left pe-2"></i>
+                                        <p className="text-muted">
+                                            <i className="fas fa-quote-left pe-2"></i>
                                             Thank you for all your help, I think the course was fantastic and I really enjoy it.
                                             All the instructors very professional and the approach to the candidates was very individual,
                                             I felt like it was a course just for me. We will definitely see you soon!
                                         </p>
                                     </div>
-                                    <ul class="list-unstyled d-flex justify-content-center text-warning mb-0">
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="fas fa-star fa-sm"></i></li>
-                                        <li><i class="far fa-star fa-sm"></i></li>
+                                    <ul className="list-unstyled d-flex justify-content-center text-warning mb-0">
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="fas fa-star fa-sm"></i></li>
+                                        <li><i className="far fa-star fa-sm"></i></li>
                                     </ul>
                                 </div>
 

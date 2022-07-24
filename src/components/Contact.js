@@ -120,7 +120,7 @@ function Contact() {
                     </h1>
 
 
-                    <form class="needs-validation" action="/" onSubmit={handleSubmit} method="get" novalidate>
+                    <form className="needs-validation" action="/" onSubmit={handleSubmit} method="get" noValidate>
 
 
                         <div className="row mt-3">
@@ -155,7 +155,7 @@ function Contact() {
                                         aria-label="phone" required />
                                 </div>
                                 <div className="mb-2">
-                                    <button type="submit" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
+                                    <button type="submit" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#myModal">
                                         Send Message
                                     </button>
 
@@ -171,7 +171,7 @@ function Contact() {
 
                     <div className="map-container">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d33251.37800359915!2d-8.52782481229902!3d51.725289697707915!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe1763db1d99ded19!2sSouth%20West%20Technical%20Diving!5e0!3m2!1sen!2sie!4v1657224321670!5m2!1sen!2sie" width="600" height="450"
-                            allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="location"></iframe>
+                            allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade" title="location"></iframe>
                     </div>
                 </div>
 

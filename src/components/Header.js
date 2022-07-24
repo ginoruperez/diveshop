@@ -10,7 +10,7 @@ export default function Header(props) {
                         <small className="fw-normal fst-italic"> Your Shopping Cart </small>
                         {' '}
                         {props.countCartItems ? (
-                            <button type="button" class="btn btn-primary" >{props.countCartItems}</button>
+                            <button type="button" className="btn btn-primary" >{props.countCartItems}</button>
                         ) : (
                             ''
                         )}

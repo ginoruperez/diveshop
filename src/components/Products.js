@@ -9,7 +9,7 @@ import { footer } from './Footer';
 export default function Products({ isAdmin }) {
 
 
-  const productAdmin = isAdmin && "with product admin enabled"
+  const [productAdmin,setProductAdmin] = useState(isAdmin && "with product admin enabled");
 
   // use State to monitor the products data
   const [products, setProducts] = useState(null);

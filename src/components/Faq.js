@@ -138,7 +138,7 @@ function Faq() {
                             <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo"
                                 data-bs-parent="#diveAccordion">
                                 <div className="accordion-body">
-                                    <p>
+                                    <div>
                                         Learning to scuba dive is an incredible adventure! With PADI as your training organization, your path to being a certified diver is accomplished in three exciting phases:
 
 
@@ -152,7 +152,7 @@ function Faq() {
 
                                         <h5>Open Water Dives</h5>
                                         After your confined water dives, you and the new friends you’ve made will continue to learn during four open water dives with your PADI Instructor at a dive site. This is where you fully experience the underwater adventure. You may make these dives locally or on a fun weekend away.
-                                    </p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
