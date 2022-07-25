@@ -26,7 +26,7 @@ export default function ProductCard({ product, onAdd, handleDelete, isAdmin }) {
           <div className="card">
 
             <h6 className="card-title">{product.title}</h6>
-            <img className="card-img-top" alt="discover scuba" src={product.filename} />
+            <img className="card-img-top" alt="discover scuba" src={product.filename} style={{"height":"350px"}} />
             <div className="card-body">
               <h5 className="card-title">{product.description}</h5>
               <p className="card-text">€ {product.price}</p>
