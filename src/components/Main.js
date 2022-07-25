@@ -186,7 +186,7 @@ function Main() {
                             </section>
                             <br />
                             <section>
-                                Since 2017, Celtic Sea Dive shop is one of the premier dive shops in the country and it is a
+                                Since 2010, Celtic Sea Dive shop is one of the premier dive shops in the country and it is a
                                 proud <strong><em>5 star PADI facility</em></strong> as well as sales and repairs.
                             </section>
                             <br />
