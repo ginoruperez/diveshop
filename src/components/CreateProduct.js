@@ -8,7 +8,7 @@ import { footer } from './Footer';
 export default function CreateProduct() {
     const [title, setTitle] = useState('');
     const [description, setDescription] = useState('');
-    const [category, setCategory] = useState('coffee');
+    const [type, setType] = useState('snorkel');
     const [rating, setRating] = useState(0);
     const [price, setPrice] = useState(0);
     const [filename, setFilename] = useState('');
@@ -17,12 +17,16 @@ export default function CreateProduct() {
 
     const handleProductCreation = (e) => {
         e.preventDefault();
-        if (title && description && category && price) {
-            console.log({ title, description, category, rating, price, filename });
+        if (title && description && type && price) {
+            console.log({ title, type, description, rating, price, filename });
+
+            
+            const priceTotal = parseFloat(price, 10)
+
             fetch('http://localhost:8000/products', {
                 method: 'POST',
                 headers: { "content-type": "application/json" },
-                body: JSON.stringify({ title, description, category, rating, price, filename })
+                body: JSON.stringify({ title, type, description, rating, price: priceTotal, filename })
 
             }).then(() => navigateTo('/Products'))
         }
@@ -162,9 +166,9 @@ export default function CreateProduct() {
                         <TextField
                             label='Price'
                             type='number'
+                            value={price}
                             onChange={(e) => setPrice(e.target.value)}
                             required
-
                             fullWidth
                             variant='outlined'
                             color='info'
@@ -175,7 +179,7 @@ export default function CreateProduct() {
                         <TextField
                             label='Image URL Address'
                             onChange={(e) => setFilename(e.target.value)}
-
+                            
                             fullWidth
                             variant='outlined'
 
@@ -188,9 +192,9 @@ export default function CreateProduct() {
 
                         <FormControl fullWidth>
                             <RadioGroup
-                                defaultValue='coffee'
-                                value={category}
-                                onChange={(e) => setCategory(e.target.value)}
+                                defaultValue='Dive Suit'
+                                value={type}
+                                onChange={(e) => setType(e.target.value)}
                             >
                                 <FormControlLabel control={<Radio />} label='Dive Suit' value='dive suit' />
                                 <FormControlLabel control={<Radio />} label='Regulator and BCD' value='dive equipment' />

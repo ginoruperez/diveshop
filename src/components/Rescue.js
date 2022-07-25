@@ -1,9 +1,9 @@
 import React from 'react';
 import dolphinico from './images/dolphin.ico';
 import mermaid from './images/products/mermaid-small.jpg';
-import homedolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
 import boatdiver from './images/products/boatdiver.jpg';
+import fundive  from './images/products/fundive.jpg';
 import { footer } from './Footer';
 
 
@@ -172,9 +172,9 @@ function Rescue() {
                     <div className="row">
                         <div className="col-md-3 col-sm-6 mb-3">
                             <a href="/AllCourses">
-                                <img className="img-fluid" src={homedolphin} alt="dolphin" />
+                                <img className="img-fluid" src={fundive} alt="dolphin" />
                             </a>
-                            <p>Close encouter with Dolphin</p>
+                            <p>Fun Dive for Kids and Adult</p>
                         </div>
 
                         <div className="col-md-3 col-sm-6 mb-3">

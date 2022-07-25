@@ -89,17 +89,6 @@
       "rating": 1
     },
     {
-      "id": 9,
-      "title": "Bathrobe",
-      "type": "Towels",
-      "description": "Microfiber bathrobe",
-      "filename": "https://assets.mareshop.eu/media/catalog/product/cache/23/image/600x600/9df78eab33525d08d6e5fb8d27136e95/a/q/aquasphere-waterwayroyal_1.jpg",
-      "height": 600,
-      "width": 398,
-      "price": 19.49,
-      "rating": 4
-    },
-    {
       "id": 10,
       "title": "Scuba Tank",
       "type": "Cylinder",
@@ -131,6 +120,15 @@
       "width": 401,
       "price": 18.18,
       "rating": 1
+    },
+    {
+      "title": "Adults’ snorkel ",
+      "type": "fins goggles",
+      "description": "Adults’ snorkel snk 520",
+      "rating": 3,
+      "price": 20.5,
+      "filename": "https://www.sportsdirect.com/images/products/88200013_l.jpg",
+      "id": 13
     }
   ]
 }

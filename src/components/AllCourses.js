@@ -9,6 +9,7 @@ import rescue from './images/products/services-rescue.jpg';
 import dolphin from './images/products/home-dolphin-small.jpg';
 import photography from './images/products/dive-photography.jpg';
 import boatdiver from './images/products/boatdiver.jpg';
+import fundive  from './images/products/fundive.jpg';
 import { footer } from './Footer'
 
 
@@ -33,10 +34,7 @@ function AllCourses() {
     const boatDiveInfo = <p className="lead"> If you’re new to boat diving or want to learn more about diving from different types of boats, enroll in the PADI® Boat Diver course.
         During two dives with an instructor you’ll learn nautical terminology, boat diving etiquette and may practice using lines and/or deploy a surface marker buoy (SMB).</p>
 
-    const dolphinInfo = <p className="lead"> Enjoy our deep-water programme where you will get a chance to swim and interact with our resident dolphins.
-        Be a part of their energetic daily physical routine with our specialist team</p>
-
-
+    
     const underwaterPhotoInfo = <p className="lead">During the PADI® Digital Underwater Photographer course, you’ll learn how to take underwater photos you’ll be proud to share with others.
         Avoid beginner mistakes and shorten the learning curve with tips from the pros. Learn how to use underwater photography lights (strobes), avoid backscatter and enhance color.</p>
 
@@ -165,13 +163,9 @@ function AllCourses() {
                                                     <p className="card-text">€350.00</p>
                                                 </div>
                                                 <div className="card-footer">
-                                                    <a className="btn btn-sm btn-primary mt-2" data-bs-toggle="collapse"
-                                                        data-bs-target="#subscriptionInformationDolphin" role="button" aria-expanded="false"
-                                                        aria-controls="subscriptionInformation" href='/'>More information</a>
-                                                    <div className="collapse" id="subscriptionInformationDolphin">
-                                                        {dolphinInfo}
-                                                    </div>
+                                                    <a href="/DolphinEncounter" className="btn btn-primary">View details</a>
                                                 </div>
+                                                
                                             </div>
                                         </div>
                                         <div className="col-md-4">
@@ -197,7 +191,7 @@ function AllCourses() {
 
                                         <div className="col-md-4">
                                             <div className="card rounded mb-4 shadow-sm">
-                                                <img className="card-img-top" alt="snorkel" src={snorkel} />
+                                                <img className="card-img-top" alt="snorkel" src={fundive} />
                                                 <div className="card-body">
                                                     <h5 className="card-title">Fun Dive for Kids and Adult</h5>
                                                     <p className="card-text">€80.00</p>

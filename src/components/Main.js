@@ -216,7 +216,7 @@ function Main() {
                                     <p className="card-text">Feels Great to swim with our Dolphin!</p>
                                 </div>
                                 <div className="card-footer">
-                                    <a href="/AllCourses" className="btn btn-primary">View details</a>
+                                    <a href="/DolphinEncounter" className="btn btn-primary">View details</a>
                                 </div>
                             </div>
                         </div>

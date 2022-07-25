@@ -3,10 +3,17 @@ import dolphinico from './images/dolphin.ico';
 import mermaid from './images/products/mermaid-small.jpg';
 import photography from './images/products/dive-photography.jpg';
 import boatdiver from './images/products/boatdiver.jpg';
-import fundive  from './images/products/fundive.jpg';
 import { footer } from './Footer';
+import fundive  from './images/products/fundive.jpg';
+import dolphin1 from './images/products/dolphin1.jpg';
+import dolphin2 from './images/products/dolphin2.jpg';
+import dolphin3 from './images/products/dolphin3.jpg';
+import dolphin4 from './images/products/dolphin4.jpg';
+import dolphin5 from './images/products/dolphin5.jpg';
+import dolphin6 from './images/products/dolphin6.jpg';
 
-function AdvOpenWater() {
+
+function DolphinEncounter() {
 
     return (
         <div>
@@ -36,8 +43,8 @@ function AdvOpenWater() {
                                     </a>
 
                                     <ul className="dropdown-menu active" aria-labelledby="nav-dropdown">
-                                        <li><a className="dropdown-item" href="/OpenWater">Open Water</a></li>
-                                        <li><a className="dropdown-item active" href="/AdvOpenWater">Advanced Open Water</a></li>
+                                        <li><a className="dropdown-item active" href="/OpenWater">Open Water</a></li>
+                                        <li><a className="dropdown-item" href="/AdvOpenWater">Advanced Open Water</a></li>
                                         <li><a className="dropdown-item" href="/Rescue">Rescue Diving</a></li>
                                         <li>
                                             <hr className="dropdown-divider" />
@@ -77,7 +84,8 @@ function AdvOpenWater() {
                     </div>
                     <div className="nav-item dropdown" style={{ "width": "170px", "height": "20px" }} >
 
-                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown">
+                        <div className="profile-pic dropdown-toggle" data-bs-toggle="dropdown"
+                        >
                             <i className="fa fa-user" aria-hidden="true"></i>
                         </div>
 
@@ -96,65 +104,115 @@ function AdvOpenWater() {
 
             </header>
             <main role="main">
-                <div className="container-fluid jumbotron jumbotron-detail-adv-open-water py-5">
+                <div className="container-fluid jumbotron jumbotron-detail-dolphin py-5">
                     <div className="container">
-                        <h1 className="display-3 fw-bold text-white">Advanced Open Water Dive</h1>
+                        <h1 className="display-3 fw-bold text-white">Dive with Dolphin</h1>
                     </div>
                 </div>
 
                 <div className="container">
-
                     <nav className="my-3 ms-3" >
                         <ol className="breadcrumb">
                             <li className="breadcrumb-item"><a href="/">Home</a></li>
                             <li className="breadcrumb-item"><a href="/">Courses</a></li>
-                            <li className="breadcrumb-item">Advanced Open Water</li>
+                            <li className="breadcrumb-item">Dive with Dolphin</li>
                         </ol>
                     </nav>
 
-                    <h1 className="fw-bolder">Advanced Open Water Dive
-                        <small className="fw-normal fst-italic"> Step up with your Diving Skills!</small>
+                    <h1 className="fw-bolder">Dive with Dolphin
+                        <small className="fw-normal fst-italic"> An awesome encounter with Dolphin!</small>
                     </h1>
 
-                    <div className="row ">
-                        <div className="col-6 col-lg-8">
+                    <div className="row">
 
-                            <div className="container-openwater">
-                                <iframe className="responsive-iframe" src="https://www.youtube.com/embed/tWPGi52nkHg?autoplay=1&mute=1"
-                                    title="YouTube video player"></iframe>
+                        <div className="col-2 col-lg-8 dolphin-container">
+
+                            <div id="welcomeCarousel" className="carousel slide carousel-dark" data-bs-ride="carousel">
+                                <div className="carousel-indicators">
+                                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="0" className="active"
+                                        aria-current="true" aria-label="Welcome 1"></button>
+                                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="1"
+                                        aria-label="Welcome 2"></button>
+                                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="2"
+                                        aria-label="Welcome 3"></button>
+                                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="3"
+                                        aria-label="Welcome 4"></button>
+                                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="4"
+                                        aria-label="Welcome 5"></button>
+                                    <button type="button" data-bs-target="#welcomeCarousel" data-bs-slide-to="5"
+                                        aria-label="Welcome 6"></button>
+                                </div>
+                                <div className="carousel-inner">
+                                    <div className="carousel-item  active">
+                                        <div className="carousel-caption">
+                                            <img className="rounded mx-auto d-block"
+                                                src={dolphin1} alt="avatar" />
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <div className="carousel-caption">
+                                            <img className="rounded mx-auto d-block"
+                                                src={dolphin2} alt="avatar" />
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <div className="carousel-caption">
+                                            <img className="rounded mx-auto d-block"
+                                                src={dolphin3} alt="avatar" />
+
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <div className="carousel-caption">
+                                            <img className="rounded mx-auto d-block"
+                                                src={dolphin4} alt="avatar" />
+
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <div className="carousel-caption">
+                                            <img className="rounded mx-auto d-block"
+                                                src={dolphin5} alt="avatar" />
+
+                                        </div>
+                                    </div>
+                                    <div className="carousel-item">
+                                        <div className="carousel-caption">
+                                            <img className="rounded mx-auto d-block"
+                                                src={dolphin6} alt="avatar" />
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <button className="carousel-control-prev" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="prev">
+                                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Previous</span>
+                                </button>
+                                <button className="carousel-control-next" type="button" data-bs-target="#welcomeCarousel" data-bs-slide="next">
+                                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span className="visually-hidden">Next</span>
+                                </button>
                             </div>
+
                         </div>
 
 
-                        <div className="col-6 col-lg-4">
-                            <h3 className="my-3">About Advanced Open Water Dive Course</h3>
-                            <p className="lead text-center">Gain more skills with Advanced Open Water Dive Course!</p>
-                            <p className="user-select-none">What every diver should know before they purchase any scuba equipment will be covered in this
-                                program. If you ever have experienced equipment problems in the water or have not felt totally
-                                comfortable on a dive, then this program is for you. The emphasis of this course is on local diving
-                                including proper thermal protection, weighting, and air control. These subjects are all covered in
-                                greater depth than your open water scuba class. The diving theory far exceeds other programs used
-                                for advanced diver certification. This program is specifically designed to teach divers the proper
-                                use of the different styles of scuba equipment — Jacket vs. Back Buoyancy, Integrated vs.
-                                Conventional Weight Systems, Steel vs. Aluminum Tanks, Vented vs. Paddle Fins, and Wet vs. Dry
-                                Suits.
-                            </p>
-                            <h3>This course includes the following :</h3>
-                            <ul>
-                                <li>PADI Advanced Open Water booklet</li>
-                                <li>Access to PADI eLearning course</li>
-                                <li>15 Hours Classroom Sessions</li>
-                                <li>5 Ocean Dives including night Dives</li>
-                                <li>PADI Advanced Open water Exam</li>
 
-                            </ul>
+                        <div className="col-6 col-lg-4">
+                            <h3 className="my-3 text-center">About Diving with Dolphin</h3>
+                            <p className="lead text-center">Join the exciting encounter with Dolphin</p>
+                            <p className="user-select-none">Enjoy our deep-water programme where you will get a chance to swim and interact 
+                            with our resident dolphins. Be a part of their energetic daily physical routine with our specialist team
+                            </p>
+                            <h4>This requires at least an open water level skills</h4>
+                            
                             <p className="user-select-none">All equipment will be provided for
-                                the length of the course.</p>
+                                the duration of this activity</p>
 
                             <div className="row">
 
                                 <div className="col-md-4">
-                                    <strong>€ 250.00</strong>
+                                    <strong>€ 350.00</strong>
                                 </div>
                                 <div className="col-md-8">
                                     <a type="button" href="/Contact" className="btn btn-success float-end">
@@ -164,11 +222,10 @@ function AdvOpenWater() {
                             </div>
                         </div>
                     </div>
-
                     <div className="p-4 mb-3 mt-2 bg-light rounded border border-primary">
-                        <h4>Quote from Edmund Hillary...</h4>
-                        <p className="mb-0 fst-italic"> It’s not the depths we conquer, but ourselves.
-
+                        <h4>A quote about Friendship...</h4>
+                        <p className="mb-0 fst-italic"> Dolphins are social mammals, capable of enjoying their lives. They form close bonds with other members of their group.
+                        Peter Singer
                         </p>
                     </div>
 
@@ -214,4 +271,4 @@ function AdvOpenWater() {
     );
 }
 
-export default AdvOpenWater;
+export default DolphinEncounter;

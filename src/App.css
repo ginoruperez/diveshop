@@ -60,6 +60,10 @@ body {
   background: url('./components/images/products/openwater.jpg') no-repeat fixed;
 }
 
+.jumbotron-detail-dolphin {
+  background: url('./components/images/header-dolphin.jpg') no-repeat fixed;
+}
+
 .jumbotron-detail-adv-open-water {
   background: url('./components/images/products/padi-shop.jpg') no-repeat fixed;
 }
@@ -205,6 +209,16 @@ iframe.services-open-water {
   height: 100%;
   border: none;
 }
+
+
+.dolphin-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: -500px; 
+  
+}
+
 
 /* MAP */
 
