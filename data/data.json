@@ -129,6 +129,33 @@
       "price": 20.5,
       "filename": "https://www.sportsdirect.com/images/products/88200013_l.jpg",
       "id": 13
+    },
+    {
+      "title": "Dive hoods",
+      "type": "dive suit",
+      "description": "Scd scuba diving 3.5 mm neoprene hood",
+      "rating": 3,
+      "price": 21.25,
+      "filename": "https://img.nauticexpo.com/images_ne/photo-g/33351-9516313.jpg",
+      "id": 14
+    },
+    {
+      "title": "Scuba Dive Bag",
+      "type": "others",
+      "description": "Scuba diving bag scd 100 litres - black/grey",
+      "rating": 4,
+      "price": 40.5,
+      "filename": "https://contents.mediadecathlon.com/p2203647/k$831e4acdbb3bd093fee684a9c5684375/scuba-diving-bag-scd-100-litres-blackslashgrey.jpg?&f=800x800",
+      "id": 15
+    },
+    {
+      "title": "Dive watch",
+      "type": "others",
+      "description": "Spearfishing and freediving wrist-mount dive computer watch partner",
+      "rating": 4,
+      "price": 95.5,
+      "filename": "https://contents.mediadecathlon.com/p2203687/k$059bf476143255442ee4f0bb4ace9aa5/spearfishing-and-freediving-wrist-mount-dive-computer-watch-partner.jpg?&f=800x800",
+      "id": 16
     }
   ]
 }
