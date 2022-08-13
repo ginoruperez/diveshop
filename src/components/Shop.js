@@ -3,7 +3,7 @@ import ShopMain from './ShopMain';
 import Basket from './Basket';
 import { data } from './data';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 
 import dolphin3 from './images/dolphin3.png';
 import dolphinico from './images/dolphin.ico';
