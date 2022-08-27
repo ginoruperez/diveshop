@@ -9,3 +9,11 @@ HOW TO INSTALL
 HOW TO CHECK THE INSTALLED LIBRARY
 
 1. view the package.json
+
+
+HOW TO BUILD THE PROJECT AND RUN ON ANY SERVER  AS STATIC WEBSITE
+
+1. npm run build
+2. npm install -g serve
+3. npx serve -s build
+4. copy the folder /build in S3 bucket as preferred web server
