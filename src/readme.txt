@@ -17,3 +17,5 @@ HOW TO BUILD THE PROJECT AND RUN ON ANY SERVER  AS STATIC WEBSITE
 2. npm install -g serve
 3. npx serve -s build
 4. copy the folder /build in S3 bucket as preferred web server
+
+references : https://stackoverflow.com/questions/49208528/how-to-run-build-version-using-create-react-app
